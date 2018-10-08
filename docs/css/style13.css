@@ -40,4 +40,14 @@ a {
   font-weight: bold;
   text-decoration: none;
 }
+
 a:hover {background-color: #ff8000;}
+
+table, th, td {
+    border: solid black 1px;
+    
+}
+
+td {
+    font-size: 0.9em;
+}

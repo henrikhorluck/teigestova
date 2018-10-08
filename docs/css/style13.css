@@ -1,6 +1,6 @@
 body {
   background: #F2F2F2;
-  font-family: 'Gothic A1', Helvetica, Arial, sans-serif;
+  font-family: "Gandhi Serif", sans-serif; /*denne fonten må lastes ned og testes!!!*/
   font-size: 14pt;
   font-weight: normal;
   color: #333333;
@@ -10,13 +10,13 @@ body {
   margin-bottom: 3.4em;
 }
 h1 {
-  font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  font-family: "Gandhi Serif", sans-serif;
   font-size: 44pt;
   font-weight: 600;
   color: #000000;
 }
 h2 {
-  font-family: 'Lato', sans-serif;
+  font-family: "Gandhi Serif", sans-serif;
   font-size: 18pt;
   font-weight: 600;
   color: #ff8000;
@@ -45,9 +45,9 @@ a:hover {background-color: #ff8000;}
 
 table, th, td {
     border: solid black 1px;
-    
+    margin: 1.5em auto;  
 }
 
 td {
-    font-size: 0.9em;
+    font-size: 0.9em;    /*setter relativt for å få responsiv*/
 }

@@ -41,13 +41,3 @@ a {
   text-decoration: none;
 }
 a:hover {background-color: #ff8000;}
-
-#client {
-    height: auto;
-    max-height: 300px;
-    width: auto;
-    max-width: 100%;
-    float: right;
-    padding-left: 10px;
-    border-radius: 10%;
-}

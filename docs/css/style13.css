@@ -56,3 +56,14 @@ figcaption {
     font-size: 0.7em;
     text-align: center;
 }
+
+img {
+    width: 50%;
+    border: auto;
+}
+
+#navimg {
+    width: 100%;
+}
+
+#img

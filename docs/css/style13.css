@@ -1,7 +1,7 @@
 body {
   background: #F2F2F2;
-  font-family: "Gandhi Serif", sans-serif; /*denne fonten må lastes ned og testes!!!*/
-  font-size: 14pt;
+  font-family: "Roboto", sans-serif; /*denne fonten må lastes ned og testes!!!*/
+  font-size: 1em;
   font-weight: normal;
   color: #333333;
   margin: 0 auto;
@@ -10,29 +10,29 @@ body {
   margin-bottom: 3.4em;
 }
 h1 {
-  font-family: "Gandhi Serif", sans-serif;
-  font-size: 44pt;
+  font-family: "Playfair Display", sans-serif;
+  font-size: 2.5em;
   font-weight: 600;
   color: #000000;
 }
 h2 {
-  font-family: "Gandhi Serif", sans-serif;
-  font-size: 18pt;
+  font-family: "Playfair Display", sans-serif;
+  font-size: 1.8em;
   font-weight: 600;
   color: #ff8000;
-  margin-top: 2.7em;
+  margin-top: 1.8em;
 }
 h3 {
   margin-top: 1.8em;
   margin-bottom: 0em;
-  font-size: 16pt;
+  font-size: 1.2em;
 }
 section {line-height: 150%;}
 p {margin-top: 0.5em;}
-#authors {font-size: 11pt;}
+#authors {font-size: 0.8em;}
 header {margin-bottom: 4.2em;}
 footer {
-  font-size:8pt;
+  font-size:0.8em;
   margin-top: 5em;
 }
 a {
@@ -54,4 +54,5 @@ td {
 
 figcaption {
     font-size: 0.7em;
+    text-align: center;
 }

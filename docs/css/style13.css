@@ -51,3 +51,7 @@ table, th, td {
 td {
     font-size: 0.9em;    /*setter relativt for å få responsiv*/
 }
+
+figcaption {
+    font-size: 0.7em;
+}

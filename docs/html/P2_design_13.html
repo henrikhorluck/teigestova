@@ -38,7 +38,7 @@
 
                 By structuring the page this way, the user will be able to easily access the content of most interest while still receiving information about the general content on the page. The main page will inform the user about categories such as “Om Teigestova” and “Våre hunder”. When redirected to those categories, they will be able to access every webpage connected to the category. The user could also use the navigation bare if they want to immediately access a specific page.
 
-                Figure 1 shows the navigation structure without the use of the navigation bar. We’ve not included a figure with the navigation bar, because every subpage is available at all times. This is because the navigation bar will follow on every page. It would therefore appear too cluttered if we were to draw lines between every webpage.
+                Figure 1 shows the navigation structure without the use of the navigation bar. We’ve not included a figure with the navigation bar, because every subpage is available at all times. This is because the navigation bar will follow on every page. It would therefore appear too cluttered if we were to draw lines between each seperate html file we intend to use..
             
                 <img id="navimg" src="../img/Navigation%20structure.jpg" title="Navigation structure" alt="Shows the navigation structure">
                 <figcaption>Figure 1: Shows the navigation structure if the user moves through the webpage without using the navigation bar</figcaption>
@@ -119,229 +119,214 @@
         <section id="plan" class="paragraph"> <!-- Kunne laget JS for å importe, men usikker på det så la inn manuelt -->
             
             <h2>Plan</h2>
+            
+            <p>
+                The table below shows all of our html, css and script files as well as who is in charge of producing and maintaining said files. We've decided to split the scripts between four members in the group and the last one will make sure the CSS file works as intended upon final delivary. We believe we have split the workload evenly among all group members. The individuals responsible for a file won't necessarily have to do all the work themselves, but they are responsible for making sure that the task is completed on the due date. We intend to be done with everything by monday the fifth of november, leaving us with a week of testing, proofreading and making any potential last minute changes if necessary.
+            </p>
+            
             <table id="table1">
             
-            <tr id="tableSummary">
-                <th colspan="4">P3 Coding Deliverables</th>
-            </tr>
-            
-            <tr id="tableHeader">
-                <th>Filename</th>
-                <th>Description</th>
-                <th>Responsible</th>
-                <th>Deadline</th>
-            </tr>
-            
-            <tr class="tableInfo">
-            <td>teigestova.html</td>
-            <td>Home page of the website.</td>
-            <td>Jon-Inge</td>
-            <td>24.10.18</td>    
-            </tr>
-            
-            <tr class="tableInfo">
-            <td>ourDogs.html</td>
-            <td>Information about the dogs used in the breeding process. Landing page for the pages “ourDogsParent.html”, “ourDogsGoldie.html”, “ourDogsAriana.html”, “ourDogsWhitney.html”, “ourDogsPuppies.html”, and “ourDogsActivities.html”.</td>
-            <td>Mali</td>
-            <td>24.10.18</td>    
-            </tr>
-            
-            <tr class="tableInfo">
-            <td>ourDogsParent.html</td>
-            <td>Introduction to the parent dogs. Landing page for the pages
-                “ourDogsGoldie.html”,
-                “ourDogsAriana.html” and
-                “ourDogsWhitney.html”.</td>
-            <td>Mali</td>
-            <td>24.10.18</td>    
-            </tr>
-            
-            <tr class="tableInfo">
-            <td>ourDogsGoldie.html</td>
-            <td>More in depth information about the parent dog Goldie.</td>
-            <td>Mali</td>
-            <td>24.10.18</td>    
-            </tr>
-            
-            <tr class="tableInfo">
-            <td>ourDogsAriana.html</td>
-            <td>More in depth information about the parent dog Ariana.</td>
-            <td>Mali</td>
-            <td>24.10.18</td>    
-            </tr>
-            
-            <tr class="tableInfo">
-            <td>ourDogsWhitney.html</td>
-            <td>More in depth information about the parent dog Whitney.</td>
-            <td>Mali</td>
-            <td>24.10.18</td>    
-            </tr>
-            
-            <tr class="tableInfo">
-            <td>ourDogsPuppies.html</td>
-            <td>Information about upcoming litters.</td>
-            <td>Henrik</td>
-            <td>24.10.18</td>    
-            </tr>
-            
-            <tr class="tableInfo">
-            <td>ourDogsActivites.html</td>
-            <td>Information about shows, awards, agility training, and other activities.</td>
-            <td>Simen</td>
-            <td>24.10.18</td>    
-            </tr>
-            
-            <tr class="tableInfo">
-            <td>about.html</td>
-            <td>Information about what Teigestova is, general information about its business. </td>
-            <td>Hedvig</td>
-            <td>24.10.18</td>    
-            </tr>
-            
-            <tr class="tableInfo">
-            <td>bichonHavanais.html</td>
-            <td>General information about the breed, advantages/disadvantages, who the dog is fit for, etc. </td>
-            <td>Simen</td>
-            <td>24.10.18</td>    
-            </tr>
-            
-            <tr class="tableInfo">
-            <td>contact.html</td>
-            <td>Contact information. Includes integration of Google Maps. </td>
-            <td>Hedvig</td>
-            <td>24.10.18</td>    
-            </tr>
-            
-            <tr class="tableInfo">
-            <td>style.css</td>
-            <td>Everyone will add new styling, but Mali is responsible for maintaining the file and make sure that it works.</td>
-            <td>Mali</td>
-            <td>31.10.18</td>    
-            </tr>
-            
-            <tr class="tableInfo">
-            <td>slideShow.js</td>
-            <td></td>
-            <td>Jon-Inge</td>
-            <td>05.11.18</td>    
-            </tr>
-            
-            <tr class="tableInfo">
-            <td>dropDown.js</td>
-            <td></td>
-            <td>Hedvig</td>
-            <td>05.11.18</td>    
-            </tr>
-            
-            <tr class="tableInfo">
-            <td>menuBar.js</td>
-            <td></td>
-            <td>Simen</td>
-            <td>05.11.18</td>    
-            </tr>
-            
-            <tr class="tableInfo">
-            <td>.js</td>
-            <td></td>
-            <td>Henrik</td>
-            <td>05.11.18</td>    
-            </tr>
-            
-            <tr class="tableInfo">
-            <td>logoMain.png</td>
-            <td>Logo to be used in the middle of the navigation bar. </td>
-            <td>Mali og Hedvig</td>
-            <td>28.10.18</td>    
-            </tr>
-            
-            <tr class="tableInfo">
-            <td>Menu elements</td>
-            <td>Design the five menu elements. </td>
-            <td>Mali</td>
-            <td>28.10.18</td>    
-            </tr>
-            
-            <tr class="tableInfo">
-            <td>header_nav.part</td>
-            <td></td>
-            <td></td>
-            <td></td>    
-            </tr>
-            
-            <tr class="tableInfo">
-            <td>footer.part</td>
-            <td></td>
-            <td></td>
-            <td></td>    
-            </tr>
-            
-            <tr class="tableInfo">
-            <td>Text files</td>
-            <td>Receive text files from Teigestova </td>
-            <td>Jon-Inge</td>
-            <td>15.10.18</td>    
-            </tr>
-            
-            <tr class="tableInfo">
-            <td>Images</td>
-            <td>1 main image and 3 smaller, images per dog, Image of owner </td>
-            <td>Hedvig</td>
-            <td>31.10.18</td>    
-            </tr>
-            
-            <tr class="tableInfo">
-            <td>Text editing</td>
-            <td>Final proof-reading of text. </td>
-            <td>Hedvig</td>
-            <td>08.11.18</td>    
-            </tr>
-            
-            <tr class="tableInfo">
-            <td>Basic SEO implementation</td>
-            <td></td>
-            <td>Hedvig</td>
-            <td>31.10.18</td>    
-            </tr>
-            
-            <tr class="tableInfo">
-            <td>Final controls</td>
-            <td></td>
-            <td>All</td>
-            <td>05.11.18</td>    
-            </tr>
-            
-            <tr class="tableInfo">
-            <td>Testing</td>
-            <td></td>
-            <td>All</td>
-            <td>07.11.18</td>    
-            </tr>
-            
-            <tr class="tableInfo">
-            <td>P3_changes.html</td>
-            <td>Document detailing and justifying all substantive changes from the design; describing how the team members fulfilled their minimum requirements; which person worked on which files; and indicating how the modularity requirement was handles and who was responsible for the implementation. </td>
-            <td>All</td>
-            <td>08.11.18</td>    
-            </tr>
-            
-            <tr class="tableInfo">
-            <td>Upload file directory to folk.ntnu.no and Blackboard</td>
-            <td></td>
-            <td>Mali</td>
-            <td>08.11.18</td>    
-            </tr>
-            
+                <tr id="tableSummary">
+                    <th colspan="4">P3 Coding Deliverables</th>
+                </tr>
+
+                <tr id="tableHeader">
+                    <th>Filename</th>
+                    <th>Description</th>
+                    <th>Responsible</th>
+                    <th>Deadline</th>
+                </tr>
+
+                <tr class="tableInfo">
+                <td>teigestova.html</td>
+                <td>Home page of the website.</td>
+                <td>Jon-Inge</td>
+                <td>24.10.18</td>    
+                </tr>
+
+                <tr class="tableInfo">
+                <td>ourDogs.html</td>
+                <td>Information about the mother dogs used to breed. Landing page for the pages “ourDogsParent.html”, “ourDogsPuppies.html”, and “ourDogsActivities.html”.</td>
+                <td>Mali</td>
+                <td>24.10.18</td>    
+                </tr>
+
+                <tr class="tableInfo">
+                <td>ourDogsParent.html</td>
+                <td>Introduction to the parent dogs. This page will be dynamic through the use of javascript, infomation about the dogs belonging to the kennel will be displayed here when the user clicks on one of the dogs.</td>
+                <td>Henrik</td>
+                <td>24.10.18</td>    
+                </tr>
+
+                <tr class="tableInfo">
+                <td>ourDogsPuppies.html</td>
+                <td>Information about upcoming litters.</td>
+                <td>Henrik</td>
+                <td>24.10.18</td>    
+                </tr>
+
+                <tr class="tableInfo">
+                <td>ourDogsActivites.html</td>
+                <td>Information about shows, awards, agility training, and other activities.</td>
+                <td>Simen</td>
+                <td>24.10.18</td>    
+                </tr>
+
+                <tr class="tableInfo">
+                <td>about.html</td>
+                <td>Information about what Teigestova is, general information about its business. </td>
+                <td>Hedvig</td>
+                <td>24.10.18</td>    
+                </tr>
+
+                <tr class="tableInfo">
+                <td>bichonHavanais.html</td>
+                <td>General information about the breed, advantages/disadvantages, who the dog is fit for, etc. </td>
+                <td>Simen</td>
+                <td>24.10.18</td>    
+                </tr>
+
+                <tr class="tableInfo">
+                <td>contact.html</td>
+                <td>Contact information. Includes integration of Google Maps. </td>
+                <td>Hedvig</td>
+                <td>24.10.18</td>    
+                </tr>
+
+                <tr class="tableInfo">
+                <td>style.css</td>
+                <td>Everyone will add new styling, but Mali is responsible for maintaining the file and make sure that it works.</td>
+                <td>Mali</td>
+                <td>31.10.18</td>    
+                </tr>
+
+                <tr class="tableInfo">
+                <td>slideShow.js</td>
+                <td></td>
+                <td>Jon-Inge</td>
+                <td>05.11.18</td>    
+                </tr>
+
+                <tr class="tableInfo">
+                <td>dropDown.js</td>
+                <td></td>
+                <td>Hedvig</td>
+                <td>05.11.18</td>    
+                </tr>
+
+                <tr class="tableInfo">
+                <td>menuBar.js</td>
+                <td></td>
+                <td>Simen</td>
+                <td>05.11.18</td>    
+                </tr>
+
+                <tr class="tableInfo">
+                <td>.js</td>
+                <td></td>
+                <td>Henrik</td>
+                <td>05.11.18</td>    
+                </tr>
+
+                <tr class="tableInfo">
+                <td>logoMain.png</td>
+                <td>Logo to be used in the middle of the navigation bar. </td>
+                <td>Mali og Hedvig</td>
+                <td>28.10.18</td>    
+                </tr>
+
+                <tr class="tableInfo">
+                <td>Menu elements</td>
+                <td>Design the five menu elements. </td>
+                <td>Mali</td>
+                <td>28.10.18</td>    
+                </tr>
+
+                <tr class="tableInfo">
+                <td>header_nav.part</td>
+                <td></td>
+                <td></td>
+                <td></td>    
+                </tr>
+
+                <tr class="tableInfo">
+                <td>footer.part</td>
+                <td></td>
+                <td></td>
+                <td></td>    
+                </tr>
+
+                <tr class="tableInfo">
+                <td>Text files</td>
+                <td>Receive text files from Teigestova </td>
+                <td>Jon-Inge</td>
+                <td>15.10.18</td>    
+                </tr>
+
+                <tr class="tableInfo">
+                <td>Images</td>
+                <td>1 main image and 3 smaller, images per dog, Image of owner </td>
+                <td>Hedvig</td>
+                <td>31.10.18</td>    
+                </tr>
+
+                <tr class="tableInfo">
+                <td>Text editing</td>
+                <td>Final proof-reading of text. </td>
+                <td>Hedvig</td>
+                <td>08.11.18</td>    
+                </tr>
+
+                <tr class="tableInfo">
+                <td>Basic SEO implementation</td>
+                <td></td>
+                <td>Hedvig</td>
+                <td>31.10.18</td>    
+                </tr>
+
+                <tr class="tableInfo">
+                <td>Final controls</td>
+                <td></td>
+                <td>All</td>
+                <td>05.11.18</td>    
+                </tr>
+
+                <tr class="tableInfo">
+                <td>Testing</td>
+                <td></td>
+                <td>All</td>
+                <td>07.11.18</td>    
+                </tr>
+
+                <tr class="tableInfo">
+                <td>P3_changes.html</td>
+                <td>Document detailing and justifying all substantive changes from the design; describing how the team members fulfilled their minimum requirements; which person worked on which files; and indicating how the modularity requirement was handles and who was responsible for the implementation. </td>
+                <td>All</td>
+                <td>08.11.18</td>    
+                </tr>
+
+                <tr class="tableInfo">
+                <td>Upload file directory to folk.ntnu.no and Blackboard</td>
+                <td></td>
+                <td>Mali</td>
+                <td>08.11.18</td>    
+                </tr>
+
             </table>
+            
+            <p>
+                Below is a table detailing the file structure. Inside of the "docs" folder, there'll be seperate folders for "html", "img", "scripts" and "css".
+            </p>
             
             <table id="table2">
                <tr>
-                   <th colspan="3">File Overview</th>
+                   <th colspan="3">docs</th>
                </tr>
                
                 <tr>
-                    <th>Document files</th>
-                    <th>Images</th>
-                    <th>Scripts</th>
+                    <th>html</th>
+                    <th>img</th>
+                    <th>scripts</th>
                 </tr>
                 
                 <tr>
@@ -363,49 +348,49 @@
                 </tr>
                 
                 <tr>
-                    <td>ourDogsGoldie.html</td>
+                    <td>ourDogsPuppies.html</td>
                     <td>bichonMain.jpg</td>
                     <td>.js</td>
                 </tr>
                 
                 <tr>
-                    <td>ourDogsAriana.html</td>
+                    <td>ourDogsActivites.html</td>
                     <td>activitiesMain.jpg</td>
                     <td></td>
                 </tr>
                 
                 <tr>
-                    <td>ourDogsWhitney.html</td>
+                    <td>about.html</td>
                     <td>goldie1.jpg</td>
                     <td></td>
                 </tr>
                 
                 <tr>
-                    <td>ourDogsPuppies.html</td>
+                    <td>bichonHavanais.html</td>
                     <td>goldie2.jpg</td>
                     <td></td>
                 </tr>
                 
                 <tr>
-                    <td>ourDogsActivites.html</td>
+                    <td>contact.html</td>
                     <td>ariana1.jpg</td>
                     <td></td>
                 </tr>
                 
                 <tr>
-                    <td>about.html</td>
+                    <td></td>
                     <td>ariana2.jpg</td>
                     <td></td>
                 </tr>
                 
                 <tr>
-                    <td>bichonHavanais.html</td>
+                    <td></td>
                     <td>whitney1.jpg</td>
                     <td></td>
                 </tr>
                 
                 <tr>
-                    <td>contact.html</td>
+                    <td></td>
                     <td>teigestova.jpg</td>
                     <td></td>
                 </tr>
@@ -414,6 +399,14 @@
                     <td></td>
                     <td>contact.jpg</td>
                     <td></td>
+                </tr>
+                
+                <tr>
+                   <th colspan="3">css</th> 
+                </tr>
+                
+                <tr>
+                    <td colspan="3">style.css</td>
                 </tr>
             </table>
             

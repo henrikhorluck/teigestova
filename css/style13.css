@@ -1,25 +1,23 @@
 body {
-  background: #F2F2F2;
+  background: #E0E0E0;
   font-family: "Roboto", sans-serif; /*denne fonten må lastes ned og testes!!!*/
   font-size: 1em;
   font-weight: normal;
-  color: #333333;
+  color: #0B1014;
   margin: 0 auto;
-  min-width: 65ch;
-  max-width: 75ch;
   margin-bottom: 3.4em;
 }
 h1 {
   font-family: "Playfair Display", sans-serif;
   font-size: 2.5em;
   font-weight: 600;
-  color: #000000;
+  color: #0B1014;
 }
 h2 {
   font-family: "Playfair Display", sans-serif;
   font-size: 1.8em;
   font-weight: 600;
-  color: #ff8000;
+  color: #0B1014;
   margin-top: 1.8em;
 }
 h3 {
@@ -27,43 +25,71 @@ h3 {
   margin-bottom: 0em;
   font-size: 1.2em;
 }
-section {line-height: 150%;}
-p {margin-top: 0.5em;}
-#authors {font-size: 0.8em;}
-header {margin-bottom: 4.2em;}
+
+h4 {
+
+}
+
+div {
+  line-height: 150%;
+}
+
+p {
+  margin-top: 0.5em;
+}
+
+header {
+  margin-bottom: 4.2em;
+}
+
 footer {
   font-size:0.8em;
   margin-top: 5em;
 }
+
 a {
-  color:#333333;
+  color:#0B1014;
   font-weight: bold;
   text-decoration: none;
 }
 
-a:hover {background-color: #ff8000;}
+a:hover {background-color: #2F80ED;}
 
-table, th, td {
-    border: solid black 1px;
-    margin: 1.5em auto;  
+#imageHeader {
+  max-width: 100%;
+  margin: 0;
+  display: block;
 }
 
-td {
-    font-size: 0.9em;    /*setter relativt for å få responsiv*/
+#imageStyle {
+  max-width: 50%;
+  height: 100%;
+  margin: 0;
+  position: relative;
 }
 
-figcaption {
-    font-size: 0.7em;
-    text-align: center;
+.imageDogs {
+  max-width: 25%;
+  margin: 25% 5%;
+  position: relative;
 }
 
-img {
-    width: 50%;
-    border: auto;
+#imageGrayscale {
+  max-width: 75%;
+  height: 100%;
+  margin: 0;
 }
 
-#navimg {
-    width: 100%;
+#imageClient {
+  max-width: 20%;
+  position: relative;
+  border: 75%;
 }
 
-#img
+#imageBackground {
+
+}
+
+.logo {
+
+}

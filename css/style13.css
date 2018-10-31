@@ -1,3 +1,7 @@
+html, body {
+  position: relative;
+}
+
 body {
   background: #E0E0E0;
   font-family: "Roboto", sans-serif; /*denne fonten må lastes ned og testes!!!*/
@@ -12,10 +16,13 @@ h1 {
   font-size: 2.5em;
   font-weight: 600;
   color: #0B1014;
+  margin: auto 25%;
+  position: relative;
+  top: 5em;
 }
 h2 {
   font-family: "Playfair Display", sans-serif;
-  font-size: 1.8em;
+  font-size: 2em;
   font-weight: 600;
   color: #0B1014;
   margin-top: 1.8em;
@@ -27,6 +34,11 @@ h3 {
 }
 
 h4 {
+  position: relative;
+  top: 10em;
+}
+
+h5 {
 
 }
 
@@ -47,6 +59,24 @@ footer {
   margin-top: 5em;
 }
 
+.intro {
+  position: relative;
+  left: 55%;
+  bottom: 20em;
+  max-width: 40%;
+}
+
+.våre_hunder {
+  position: relative;
+  text-align: center;
+  bottom: 3em;
+}
+
+.dogs {
+  position: relative;
+  width: 100%;
+}
+
 a {
   color:#0B1014;
   font-weight: bold;
@@ -55,15 +85,21 @@ a {
 
 a:hover {background-color: #2F80ED;}
 
+img {
+
+}
+
 #imageHeader {
   max-width: 100%;
+  max-height: 100%;
   margin: 0;
-  display: block;
+  /*display: block;*/
+  position: relative;
+  top: -2em;
 }
 
 #imageStyle {
   max-width: 50%;
-  height: 100%;
   margin: 0;
   position: relative;
 }
@@ -72,12 +108,18 @@ a:hover {background-color: #2F80ED;}
   max-width: 25%;
   margin: 25% 5%;
   position: relative;
+  bottom: 20em;
+  float: left;
+  width: 23%;
 }
 
 #imageGrayscale {
   max-width: 75%;
   height: 100%;
   margin: 0;
+  position: relative;
+  bottom: 20em;
+  left: 15%;
 }
 
 #imageClient {

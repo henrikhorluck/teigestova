@@ -1,4 +1,4 @@
-<!-- {sett inn path},l aget av Jon, begynte 15.10.18, hovedsida vår -->
+<!-- {sett inn path}, laget av Jon, begynte 15.10.18, hovedsida vår -->
 <html>
 <head>
     <title>Teigestova</title>
@@ -15,60 +15,60 @@
 <body>
     <div>
         <h1>Teigestova</h1>
-        <img id="imageHeader" class="front_page_images" src="../img/whitney_main.JPG" onclick="full_image()" alt="">
+        <img id="imageHeader" class="front_page_images" src="../img/whitney_main.JPG" alt="">
     </div>
 
     <div>
-        <img id="imageStyle" class="front_page_images" src="../img/whitney_main.JPG" onclick="full_image()" alt="">
+        <img id="imageWelcome" class="front_page_images" src="../img/whitney_main.JPG" onclick="full_image()" alt="">
         <h2 class="intro">Velkommen til Teigestova</h2>    
         <p class="intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
 
     <div class="dogs">
-        <h2 class="våre_hunder">Hils på hundene våre</h2>
-            <img class="imageDogs" class="front_page_images" src="../img/goldie1.jpeg" alt="">
+        <h2>Hils på hundene våre</h2>
+            <img id="goldie" class="imageDogs" class="front_page_images" src="../img/goldie1.jpeg" alt="" onclick="full_image()">
             <!--<h3>Goldie</h3>
                 <h4>Les mer om <strong>meg</strong>.</h4>-->
-            <img class="imageDogs" class="front_page_images" src="../img/ariana1.jpeg" alt="">
+            <img id="ariana" class="imageDogs" class="front_page_images" src="../img/ariana1.jpeg" alt="" onclick="full_image()">
                 <!--<h3>Ariana</h3>
                 <h4>Les mer om <strong>meg</strong>.</h4>-->
-            <img class="imageDogs" class="front_page_images" src="../img/whitney1.jpg" alt="">
+            <img id="whitney" class="imageDogs" class="front_page_images" src="../img/whitney1.jpg" alt="" onclick="full_image()">
             <!--<h3>Whitney</h3>
                 <h4>Les mer om <strong>meg</strong>.</h4>-->
     </div>
 
     <div>
-        <img id="imageGrayscale" class="front_page_images" src="../img/whitney_main.JPG" alt="">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <img id="imageGrayscale" class="front_page_images" src="../img/whitney_main.JPG" alt="" onclick="full_image()">
+        <p id="grayscaleParagraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
 
     <div>
-        <img id="imageClient" class="front_page_images" src="../img/client_photo.jpg" alt="">
-            <h4>Kontakt oss</h4>
-                <h5>Navn:</h5>
-                <h5>Mobilnummer</h5>
-                <h5>Melding</h5>
+        <img id="imageClient" class="front_page_images" src="../img/client_photo.jpg" alt="" onclick="full_image()">
+        <h5 id="formClient">Kontakt oss
+        <br> Navn:
+        <br> Mobilnummer
+        <br> Melding</h5>
     </div>
 
-    <div>
-        <img id="imageBackground" class="front_page_images" src="" alt="">
+    <footer>
+        <img id="imageBackground" class="front_page_images" src="" alt="">  <!--Sett denne rett inn i footer via styling i CSS-->
         <img class="logo" src="" slt="">
-            <ul>
+            <ul class="footerInfo">
                 <li>Teigestova Kennel</li>
                 <li>Breivikveien 133</li>
                 <li>6014 Ålesund</li>
                 <li>Tlf: 999 99 999</li>
                 <li>e-post: teigestova@gmail.com</li>
             </ul>
-            <ul>
+            <ul class="footerInfo">
                 <li><strong>Home</strong></li>
                 <li><strong>Om oss</strong></li>
                 <li><strong>Våre hunder</strong></li>
                 <li><strong>Bichon Havanais</strong></li>
                 <li><strong>Kontakt</strong></li>
-            </ul>
-    </div>
-    <footer>Tror vi flytter den siste div til footer og lar den være sticky på hver side</footer>
+            </ul> 
+    </footer>
+    
     <!--<link href=""> sett inn link til script her-->
     <script src="../scripts/imageView.js"></script>
 </body>

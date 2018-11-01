@@ -1,5 +1,6 @@
 html, body {
   position: relative;
+  overflow-x: hidden; /* FIKS DETTE?!?!?!?! lat måte å blokkere innhold som teknisk sett er definert horisontalt */
 }
 
 body {
@@ -9,7 +10,6 @@ body {
   font-weight: normal;
   color: #0B1014;
   margin: 0 auto;
-  margin-bottom: 3.4em;
 }
 h1 {
   font-family: "Playfair Display", sans-serif;
@@ -50,6 +50,19 @@ p {
   margin-top: 0.5em;
 }
 
+#grayscaleParagraph {
+  position: relative;
+  bottom: 50em;
+  left: 10%;
+  width: 30%;
+}
+
+#formClient {
+  position: relative;
+  left: 75%;
+  bottom: 30em;
+}
+
 header {
   margin-bottom: 4.2em;
 }
@@ -59,6 +72,11 @@ footer {
   margin-top: 5em;
 }
 
+.footerInfo {
+  float: left;
+  margin-left: 25%;
+}
+
 .intro {
   position: relative;
   left: 55%;
@@ -66,7 +84,7 @@ footer {
   max-width: 40%;
 }
 
-.våre_hunder {
+.dogs > h2 {
   position: relative;
   text-align: center;
   bottom: 3em;
@@ -98,7 +116,7 @@ img {
   top: -2em;
 }
 
-#imageStyle {
+#imageWelcome {
   max-width: 50%;
   margin: 0;
   position: relative;
@@ -114,18 +132,21 @@ img {
 }
 
 #imageGrayscale {
-  max-width: 75%;
-  height: 100%;
+  max-width: 50%;
+  height: 75%;
   margin: 0;
   position: relative;
   bottom: 20em;
-  left: 15%;
+  left: 50%;
 }
 
 #imageClient {
   max-width: 20%;
   position: relative;
-  border: 75%;
+  left: 25%;
+  bottom: 10em;
+  border: transparent;
+  border-radius: 50%;
 }
 
 #imageBackground {
@@ -135,3 +156,4 @@ img {
 .logo {
 
 }
+

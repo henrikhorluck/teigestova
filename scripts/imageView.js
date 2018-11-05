@@ -8,7 +8,7 @@ const image_monochrome = document.getElementById('imageGrayscale')
 const image_client = document.getElementById('imageClient')
 var image_viewer = document.getElementById('imageView')
 
-var picture = 0
+/* var pictures = 0 */
 
 var image_array = [image_header, image_welcome, image_goldie, image_ariana, image_whitney, image_monochrome, image_client]
 /* Vet ikke om denne arrayen er nødvendig*/
@@ -22,16 +22,27 @@ function close_image() {
 }
 
 var images = 1
-full_image()
+full_image(images);
+
+function change_image(n) {
+    full_image(images += n);
+}
+
+function current_image(n) {
+    full_image(images += n)
+}
+
 
 function full_image () {
-    if (n > slideshow_images.length) {
+    var full_size = document.getElementsByClassName('fullSizeImage')
+    if (n > full_size.length) {
     }
     if (n < 1) {
     }
-    for (var i = 0; i < slideshow_images.length; i++) {
-        slideshow_images[i].style.display="none";
+    for (var i = 0; i < full_size.length; i++) {
+        full_size[i].style.display = "none";
     }
+    full_size[images-1].style.display = "block";
 }
 
 /* 

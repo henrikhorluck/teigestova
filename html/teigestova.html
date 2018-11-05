@@ -20,31 +20,31 @@
     </div>
 
     <div>
-        <img id="imageWelcome" class="front_page_images" src="../img/whitney_main.JPG" onclick="open_image()" alt="">
+        <img id="imageWelcome" class="front_page_images" src="../img/whitney_main.JPG" onclick="open_image(); current_image(1);" alt="">
         <h2 class="intro">Velkommen til Teigestova</h2>    
         <p class="intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
 
     <div class="dogs">
         <h2>Hils på hundene våre</h2>
-            <img id="goldie" class="imageDogs" class="front_page_images" src="../img/goldie1.jpeg" alt="" onclick="open_image()">
+            <img id="goldie" class="imageDogs" class="front_page_images" src="../img/goldie1.jpeg" alt="" onclick="open_image(); current_image(2);">
             <!--<h3>Goldie</h3>
                 <h4>Les mer om <strong>meg</strong>.</h4>-->
-            <img id="ariana" class="imageDogs" class="front_page_images" src="../img/ariana1.jpeg" alt="" onclick="open_image()">
+            <img id="ariana" class="imageDogs" class="front_page_images" src="../img/ariana1.jpeg" alt="" onclick="open_image(); current_image(3);">
                 <!--<h3>Ariana</h3>
                 <h4>Les mer om <strong>meg</strong>.</h4>-->
-            <img id="whitney" class="imageDogs" class="front_page_images" src="../img/whitney1.jpg" alt="" onclick="open_image()">
+            <img id="whitney" class="imageDogs" class="front_page_images" src="../img/whitney1.jpg" alt="" onclick="open_image(); current_image(4);">
             <!--<h3>Whitney</h3>
                 <h4>Les mer om <strong>meg</strong>.</h4>-->
     </div>
 
     <div>
-        <img id="imageGrayscale" class="front_page_images" src="../img/whitney_main.JPG" alt="" onclick="open_image()">
+        <img id="imageGrayscale" class="front_page_images" src="../img/whitney_main.JPG" alt="" onclick="open_image(); current_image(5);">
         <p id="grayscaleParagraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
 
     <div>
-        <img id="imageClient" class="front_page_images" src="../img/client_photo.jpg" alt="" onclick="open_image()">
+        <img id="imageClient" class="front_page_images" src="../img/client_photo.jpg" alt="">
         <h5 id="formClient">Kontakt oss
         <br> Navn:
         <br> Mobilnummer
@@ -57,6 +57,15 @@
             <!-- This adds an 'X' ('&times;') to the imageViewer as well as making it run the close_image function when clicked -->
             <span class="closeViewer" onclick="close_image()"> &times; </span>
 
+            <!-- The following section adds the full size images -->
+            <div>
+                <img class="fullSizeImage" src="../img/whitney_main.JPG" style="width: 100%;">
+                <img class="fullSizeImage" src="../img/goldie1.jpeg" style="width: 100%;">
+                <img class="fullSizeImage" src="../img/ariana1.jpeg" style="width: 100%;">
+                <img class="fullSizeImage" src="../img/whitney1.jpg" style="width: 100%;">
+                <img class="fullSizeImage" src="../img/whitney_main.JPG" style="width: 100%;">
+            </div>
+
             <!-- This either adds or removes 1 from the variable 'pictures', which in turn decides which picture is shown in fullscreen -->
             <a class="nextImage" onclick="pictures(1)"> Next </a>
             <a class="previousImage" onclick="pictures(-1)"> Previous </a>
@@ -65,7 +74,7 @@
 
 <!-- The footer contains links and contact information. -->
     <footer>
-        <img id="imageBackground" class="front_page_images" src="" alt="">  <!--Sett denne rett inn i footer via styling i CSS-->
+        <img id="imageBackground" class="front_page_images" src="" alt="">  <!--Sett denne rett inn i footer via styling i CSS -->
         <img class="logo" src="" slt="">
             <ul class="footerInfo">
                 <li>Teigestova Kennel</li>

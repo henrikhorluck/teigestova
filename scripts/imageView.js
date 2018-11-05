@@ -6,18 +6,32 @@ const image_ariana = document.getElementById('ariana')
 const image_whitney = document.getElementById('whitney')
 const image_monochrome = document.getElementById('imageGrayscale')
 const image_client = document.getElementById('imageClient')
+var image_viewer = document.getElementById('imageView')
 
 var picture = 0
 
 var image_array = [image_header, image_welcome, image_goldie, image_ariana, image_whitney, image_monochrome, image_client]
 /* Vet ikke om denne arrayen er nødvendig*/
 
-function full_image() {
-
+function open_image() {
+    image_viewer.style.display = "block";
 }
 
 function close_image() {
+    image_viewer.style.display = "none";
+}
 
+var images = 1
+full_image()
+
+function full_image () {
+    if (n > slideshow_images.length) {
+    }
+    if (n < 1) {
+    }
+    for (var i = 0; i < slideshow_images.length; i++) {
+        slideshow_images[i].style.display="none";
+    }
 }
 
 /* 

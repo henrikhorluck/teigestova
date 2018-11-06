@@ -3,6 +3,10 @@ html, body {
   overflow-x: hidden; /* FIKS DETTE?!?!?!?! lat måte å blokkere innhold som teknisk sett er definert horisontalt */
 }
 
+div {
+  border-style: solid;
+}
+
 body {
   background: #E0E0E0;
   font-family: "Roboto", sans-serif; /*denne fonten må lastes ned og testes!!!*/
@@ -35,7 +39,7 @@ h3 {
 
 h4 {
   position: relative;
-  top: 10em;
+  top: 0em;
 }
 
 h5 {
@@ -50,9 +54,10 @@ p {
   margin-top: 0.5em;
 }
 
+
 #grayscaleParagraph {
   position: relative;
-  bottom: 50em;
+  bottom: 0em;
   left: 10%;
   width: 30%;
 }
@@ -60,7 +65,7 @@ p {
 #formClient {
   position: relative;
   left: 75%;
-  bottom: 30em;
+  bottom: 0em;
 }
 
 header {
@@ -84,15 +89,15 @@ footer {
   max-width: 40%;
 }
 
-.dogs > h2 {
-  position: relative;
-  text-align: center;
-  bottom: 3em;
-}
 
 .dogs {
   position: relative;
   width: 100%;
+}
+
+.dogs > h2 {
+  position: relative;
+  text-align: center;
 }
 
 a {
@@ -126,7 +131,7 @@ img {
   max-width: 25%;
   margin: 25% 5%;
   position: relative;
-  bottom: 20em;
+  bottom: 0em;
   float: left;
   width: 23%;
 }
@@ -136,7 +141,7 @@ img {
   height: 75%;
   margin: 0;
   position: relative;
-  bottom: 20em;
+  top: 0em;
   left: 50%;
 }
 
@@ -144,7 +149,7 @@ img {
   max-width: 20%;
   position: relative;
   left: 25%;
-  bottom: 10em;
+  top: 5em;
   border: transparent;
   border-radius: 50%;
 }
@@ -158,6 +163,10 @@ img {
 }
 
 /* The CSS below is necessary for the image viewer, basically it only triggers when the user presses a button and the imageView.js script is running*/
+
+/* The imageViewer class is used on the div element conatining image which should not be displayed unless the user clicks on a picture,
+thereby calling the function which changes the styling to display the imageViewer div element. This styling turns the background black (due to higher
+z-index priority) and disables scrolling.  */
 .imageViewer {
   display: none;
   position: fixed;
@@ -171,6 +180,7 @@ img {
   overflow: auto;
 }
 
+/* This is used for the content itself, setting the parameters for how much of the screen it can cover. */
 .viewerContent {
   position: relative;
   background-color: #fefefe;
@@ -180,6 +190,8 @@ img {
   max-width: 1200px;
 }
 
+/* Styles the 'X' button used to close the viewer. */
+
 .closeViewer {
   position: absolute;
   top: 10px;
@@ -187,9 +199,13 @@ img {
   color: hotpink;
 }
 
+/*The following function disables the display of all the full sized images (by class tag).*/
+
 .fullSizeImage {
   display: none;
 }
+
+/* Styles the 'previous image' and 'next image' buttons. */
 
 .nextImage, .previousImage {
   position: absolute;

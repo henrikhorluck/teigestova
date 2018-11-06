@@ -1,12 +1,12 @@
 const slideshow_images = document.getElementsByClassName('front_page_images');
-const image_header = document.getElementById('imageHeader')
-const image_welcome = document.getElementById('imageWelcome')
-const image_goldie = document.getElementById('goldie')
-const image_ariana = document.getElementById('ariana')
-const image_whitney = document.getElementById('whitney')
-const image_monochrome = document.getElementById('imageGrayscale')
-const image_client = document.getElementById('imageClient')
-var image_viewer = document.getElementById('imageView')
+const image_header = document.getElementById('imageHeader');
+const image_welcome = document.getElementById('imageWelcome');
+const image_goldie = document.getElementById('goldie');
+const image_ariana = document.getElementById('ariana');
+const image_whitney = document.getElementById('whitney');
+const image_monochrome = document.getElementById('imageGrayscale');
+const image_client = document.getElementById('imageClient');
+var image_viewer = document.getElementById('imageView');
 
 /* var pictures = 0 */
 
@@ -21,7 +21,7 @@ function close_image() {
     image_viewer.style.display = "none";
 }
 
-var images = 1
+var images = 1;
 full_image(images);
 
 function change_image(n) {
@@ -32,8 +32,8 @@ function current_image(n) {
     full_image(images = n);
 }
 
-n = 0
-function full_image () {
+
+function full_image (n) {
     var full_size = document.getElementsByClassName('fullSizeImage')
     if (n > full_size.length) {
     }

@@ -29,10 +29,10 @@ function change_image(n) {
 }
 
 function current_image(n) {
-    full_image(images += n)
+    full_image(images = n);
 }
 
-
+n = 0
 function full_image () {
     var full_size = document.getElementsByClassName('fullSizeImage')
     if (n > full_size.length) {

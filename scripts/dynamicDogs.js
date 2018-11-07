@@ -3,7 +3,7 @@ let pic_goldie = document.getElementById('ourDogsParent_Goldie')
 let pic_ariana = document.getElementById('ourDogsParent_Ariana')
 let pic_whitney = document.getElementById('ourDogsParent_Whitney')
 
-// Here there are eventlisteners for the pictures, and functions that add the text to the document
+// Eventlisteners for the pictures, and functions that add the text to the document
 pic_goldie.addEventListener('click', goldie_text)
 function goldie_text() {
     dog_text.innerHTML = `<h2>Diltedottens Go Go Girl, Goldie</h2>

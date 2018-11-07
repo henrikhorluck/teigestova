@@ -133,10 +133,6 @@ nav ul ul li {
   background: grey;
 }
 
-nav ul li:hover ul {
-  display: block;
-}
-
 nav ul li i {
   color: #292929;
   float: right;

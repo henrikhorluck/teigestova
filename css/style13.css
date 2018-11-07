@@ -242,3 +242,8 @@ z-index priority) and disables scrolling.  */
   left: 0;
 }
 
+/* Under begynner jeg med en class som inneholder korrekte displays for fullsizeimage */
+.fullSizeImage {
+  display: block;
+}
+

@@ -2,8 +2,7 @@
 
 var navigation_bar = document.getElementById('navigation_bar')
 
-navigation_bar.innerHTML = `<nav>
-  <div id="navbar">
+navigation_bar.innerHTML = `<div id="navbar">
         <i class="fas fa-bars"></i>
   </div>
 
@@ -22,9 +21,7 @@ navigation_bar.innerHTML = `<nav>
         </li>
         <li><a href="#">Bichon Havanais</a></li>
         <li><a href="#">Kontakt</a></li>
-    </ul>
-
-</nav>`
+    </ul>`
 var dropdown = document.getElementById('dropdown')
 // TODO: ha landing page for våre hunder
 /* Åpner navbaren når den er liten */

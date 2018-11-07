@@ -39,7 +39,7 @@ function current_image(n) {
 and loops through all the images with the class and blocking every image with a n value higher or lower
 than the one which is currently the 'images' value. [images-1] is necessary since images starts at 1
 and the loop starts at 0. */
-function full_image (n) {
+function full_image(n) {
     var full_size = document.getElementsByClassName('fullSizeImage')
     if (n > full_size.length) {
     }
@@ -48,7 +48,7 @@ function full_image (n) {
     for (var i = 0; i < full_size.length; i++) {
         full_size[i].style.display = "none";
     }
-    full_size[images-1].style.display = "block";
+    full_size[images - 1].style.display = "block";
 }
 
 /* 

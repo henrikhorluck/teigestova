@@ -15,6 +15,6 @@ function scroll() {
 }
 
 //funksjonen kjører når man scroller
-window.onscroll = function() {
+window.onscroll = function () {
   scroll()
 };

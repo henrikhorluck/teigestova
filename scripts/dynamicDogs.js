@@ -1,10 +1,12 @@
 let dog_text = document.getElementById('ourDogsParentText')
 let pic_goldie = document.getElementById('ourDogsParent_Goldie')
-let pic_arianna = document.getElementById('ourDogsParent_Arianna')
+let pic_ariana = document.getElementById('ourDogsParent_Ariana')
 let pic_whitney = document.getElementById('ourDogsParent_Whitney')
 
-pic_goldie.addEventListener('click', function goldie_text() {
-    dog_text.innerHTML = `<h1>Diltedottens Go Go Girl, Goldie</h1>
+// Here there are eventlisteners for the pictures, and functions that add the text to the document
+pic_goldie.addEventListener('click', goldie_text)
+function goldie_text() {
+    dog_text.innerHTML = `<h2>Diltedottens Go Go Girl, Goldie</h2>
     <ul>
         <li>Født 28/10-14</li>
         <li>Rød med hvitt bryst og lugg.</li>
@@ -26,10 +28,11 @@ pic_goldie.addEventListener('click', function goldie_text() {
     veldig godt.</p>
     <p>Hun er også på agility trening.</p>
     <em>Dronninga i huset.</em>`
-})
+}
 
-pic_arianna.addEventListener('click', function arianna_text() {
-    dog_text.innerHTML = `<h1>Cubana stars Amazing Arianna</h1>
+pic_ariana.addEventListener('click', ariana_text)
+function ariana_text() {
+    dog_text.innerHTML = `<h2>Cubana stars Amazing Ariana</h2>
     <ul>
         <li>Født 31/12-16</li>
         <li>Farge:hvit/ sobel</li>
@@ -38,20 +41,21 @@ pic_arianna.addEventListener('click', function arianna_text() {
         <li>Øyelyst 23/10-18</li>
         <li>Patella 0/0 20/2-18</li>
     </ul>
-    <p>Arianna er en liten, snerten frøken med mye fart.</p>
+    <p>Ariana er en liten, snerten frøken med mye fart.</p>
     <p>Hun er med på alt og skal du noe er hun ofte ute av døra og klar til å være med uten at du merket det.</p>
     <p>Hun har fast plass under en stol på spisestua, hvor hun har full oversikt over alle i huset.</p>
-    <p>Arianna har en kropp som er skapt for fart og er et vidunder på agility bana.</p>
+    <p>Ariana har en kropp som er skapt for fart og er et vidunder på agility bana.</p>
     <p>Hun er blant de virkelig livlig og nyskjerrig.</p>
     <p>Vil gjerne følge med på alt.</p>
-    <p>Arianna er en hund som lærer fort, hører etter og er veldig lett å få kontakt med.</p>
+    <p>Ariana er en hund som lærer fort, hører etter og er veldig lett å få kontakt med.</p>
     <p>Hun kan holde ørliten grann avstand til fremmede, i fem sekund og åtte bjeff ihvertfall.</p>
-    <p>Å ta med seg Arianna på tur uten bånd er en fryd, da hun selv søker kontakt med jevne mellomrom og
+    <p>Å ta med seg Ariana på tur uten bånd er en fryd, da hun selv søker kontakt med jevne mellomrom og
     innkalling er noe vi nesten ikke har trengt å jobbe med på denne snuppa.</p>`
-})
+}
 
-pic_whitney.addEventListener('click', function whitney_text() {
-    dog_text.innerHTML = `<h1>Skystar's Whitney</h1>
+pic_whitney.addEventListener('click', whitney_text)
+function whitney_text() {
+    dog_text.innerHTML = `<h2>Skystar's Whitney</h2>
     <ul>
         <li>Født 8/5-2018</li>
         <li>Farge grå, svart, rød og hvit</li>
@@ -70,4 +74,13 @@ pic_whitney.addEventListener('click', function whitney_text() {
     <p>Leike slossing med deg to andre er nok det aller kjekkeste hun gjør.</p>
     <p>Hun hermer etter på beste valpe vis og ser ut til å lære masse av de to andre.</p>
     <p>Vi er veldig spent på å se fortsettelsen med denne nydligheten vår.</p>`
-})
+}
+
+//This makes so that if you add ?goldie, ?ariana, or ?whitney it will load that part automatically on the site
+if (window.location.search.indexOf('goldie') > -1) {
+    goldie_text()
+} else if (window.location.search.indexOf('ariana') > -1){
+    ariana_text()
+} else if ((window.location.search.indexOf('whitney') > -1)){
+    whitney_text()
+}

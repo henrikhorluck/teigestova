@@ -79,8 +79,8 @@ function whitney_text() {
 //This makes so that if you add ?goldie, ?ariana, or ?whitney it will load that part automatically on the site
 if (window.location.search.indexOf('goldie') > -1) {
     goldie_text()
-} else if (window.location.search.indexOf('ariana') > -1) {
+} else if (window.location.search.indexOf('ariana') > -1){
     ariana_text()
-} else if ((window.location.search.indexOf('whitney') > -1)) {
+} else if ((window.location.search.indexOf('whitney') > -1)){
     whitney_text()
 }

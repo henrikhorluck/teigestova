@@ -25,7 +25,7 @@ navigation_bar.innerHTML = `<div id="navbar">
 var dropdown = document.getElementById('dropdown')
 // TODO: ha landing page for våre hunder
 /* Åpner navbaren når den er liten */
-document.getElementById('navbar').addEventListener('click', function () {
+document.getElementById('navbar').addEventListener('click', function() {
   if (dropdown.style.display == "block") {
     dropdown.style.display = "none"
   } else {
@@ -39,11 +39,11 @@ under_hunder = document.getElementById('under_hunder')
 /* Sjekker når nettleservinduet blir resiza, og endrer display-modusen til
 * dropdownen, slik at den vises riktig
 */
-window.onresize = function () {
+window.onresize = function (){
   var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-  if (w > 825) {
+  if (w > 825){
     dropdown.style.display = "block";
-  } else if (w <= 825) {
+  } else if (w <= 825){
     dropdown.style.display = "none"
   }
   under_hunder.style.display = "none"
@@ -54,7 +54,7 @@ nav ul li:hover ul {
 }
 */
 
-hunder.addEventListener('click', function () {
+hunder.addEventListener('click', function (){
   if (under_hunder.style.display != 'block') {
     under_hunder.style.display = 'block';
   } else {

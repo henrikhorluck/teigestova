@@ -5,7 +5,7 @@ const image_welcome = document.getElementById('imageWelcome');
 const image_goldie = document.getElementById('goldie');
 const image_ariana = document.getElementById('ariana');
 const image_whitney = document.getElementById('whitney');
-const image_monochrome = document.getElementById('imageGrayscale');
+const image_monochrome = document.getElementById('imageMonochrome');
 const image_client = document.getElementById('imageClient');
 var image_viewer = document.getElementById('imageView');
 

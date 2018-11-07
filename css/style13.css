@@ -4,7 +4,7 @@ html, body {
 }
 
 div {
-  border-style: solid;
+  border-style: transparent;
 }
 
 body {
@@ -53,12 +53,15 @@ p {
   margin-top: 0.5em;
 }
 
+#monochrome {
+  widht: 100%;
+}
 
 #monochromeParagraph {
   position: relative;
-  bottom: 0em;
-  left: 10%;
-  width: 30%;
+  margin: 20% 5% 0 5%;
+  float: left;
+  width: 40%;
 }
 
 #formClient {
@@ -98,6 +101,16 @@ footer {
   
 }
 
+.dogsText {
+  text-align: center;
+  max-width: 25%;
+  height: 10%;
+  margin: 1% 5%;
+  position: relative;
+  float: left;
+  width: 23%;
+}
+
 .dogs > h2 {
   position: relative;
   text-align: center;
@@ -135,29 +148,28 @@ img {
 
 .imageDogs {
   max-width: 25%;
+  height: 40%;
   margin: 0% 5%;
   position: relative;
-  bottom: 0em;
   float: left;
   width: 23%;
 }
 
 #imageMonochrome {
   max-width: 50%;
-  height: 75%;
+  height: 100%;
   margin: 0;
   position: relative;
-  top: 0em;
-  left: 50%;
 }
 
 #imageClient {
-  max-width: 20%;
+  max-width: 25%;
+  max-height: 65%;
   position: relative;
   left: 25%;
-  top: 5em;
+  top: 4em;
   border: transparent;
-  border-radius: 25%;
+  border-radius: 50%;
 }
 
 #imageBackground {

@@ -172,3 +172,10 @@ h2 {
     right: 10%;
   }
 }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000
+}

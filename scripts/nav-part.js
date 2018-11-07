@@ -7,20 +7,20 @@ navigation_bar.innerHTML = `<div id="navbar">
   </div>
 
     <ul id="dropdown">
-        <li><a href="#">Hjem</a></li>
-        <li><a href="#">Om oss</a></li>
+        <li><a href="teigestova.html">Hjem</a></li>
+        <li><a href="about.html">Om oss</a></li>
         <li id="hunder"><a href="#">Våre hunder<i class="fas fa-angle-down"></i></a>
               <ul id="under_hunder">
-                    <li><a href="#">Goldie</a></li>
-                    <li><a href="#">Ariana</a></li>
-                    <li><a href="#">Whitney</a></li>
-                    <li><a href="#">Valper</a></li>
-                    <li><a href="#">Aktiviteter</a></li>
+                    <li><a href="ourDogsParent.html?goldie">Goldie</a></li>
+                    <li><a href="ourDogsParent.html?ariana">Ariana</a></li>
+                    <li><a href="ourDogsParent.html?whitney">Whitney</a></li>
+                    <li><a href="ourDogsPuppies.html">Valper</a></li>
+                    <li><a href="ourDogsActivities.html">Aktiviteter</a></li>
               </ul>
 
         </li>
-        <li><a href="#">Bichon Havanais</a></li>
-        <li><a href="#">Kontakt</a></li>
+        <li><a href="bichonHavanais.html">Bichon Havanais</a></li>
+        <li><a href="contact.html">Kontakt</a></li>
     </ul>`
 var dropdown = document.getElementById('dropdown')
 // TODO: ha landing page for våre hunder

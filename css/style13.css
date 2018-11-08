@@ -95,6 +95,8 @@ p {
 
 nav {
   text-align: center;
+  z-index : 3;
+  position: relative;
 }
 
 nav ul {

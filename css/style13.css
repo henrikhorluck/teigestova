@@ -14,8 +14,6 @@ body {
   font-weight: normal;
   color: #0B1014;
   margin: 0 auto;
-  margin-bottom: 3.4em;
-  max-width: 80%;
 }
 
 .mainContent {
@@ -180,15 +178,33 @@ header {
   margin-bottom: 4.2em;
 }
 
-footer {
-  font-size:0.8em;
-  margin-top: 5em;
+/* === START OF FOOTER CSS === */
+
+/* the <footer> */
+#paw {
+  background-color: darkgray; /* This should probably be replaced by some form of 
+  `background-image: url("example.jpg");` see https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Backgrounds_and_Borders for more info*/
+  overflow: auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  font-size: 0.8em;
 }
 
 .footerInfo {
-  float: left;
-  margin-left: 25%;
+  padding-right: 2em;
+  padding-left: 2em;
+  display: inline-block;
 }
+
+#pawLogo {
+  height: 8em;
+  display: inline-block;
+}
+
+/* === END OF FOOTER CSS === */
 
 .intro {
   height: 50%;

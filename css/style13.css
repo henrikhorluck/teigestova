@@ -182,7 +182,8 @@ header {
 
 /* the <footer> */
 #paw {
-  background-color: darkgray;
+  background-color: darkgray; /* This should probably be replaced by some form of 
+  `background-image: url("example.jpg");` see https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Backgrounds_and_Borders for more info*/
   overflow: auto;
   width: 100%;
 }

@@ -8,7 +8,8 @@ paw.innerHTML = `<ul class="footerInfo">
     <li><a href="bichonHavanais.html">Bichon Havanais</a></li>
     <li><a href="contact.html">Kontakt</a></li>
 </ul>
-<address class="footerInfo" id="pawcontact">
+<img src="../img/logo-neg-black-small.png" alt="Teigestova Logo" id="pawLogo">
+<address class="footerInfo">
     Teigestova Kennel<br>
     Breivikveien 133<br>
     6014 Ålesund<br>

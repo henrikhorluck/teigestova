@@ -555,8 +555,9 @@ a:hover {
 
 #logo {
   position: absolute;
-  top: 3em;
+  top: 8em;
   z-index: 1;
+  left: 35%;
 }
 
 .intro {
@@ -648,14 +649,16 @@ a:hover {
   height: 75%;
 }
 
-.formClient {
+.client {
   position: relative;
-  left: 55%;
-  bottom: 13em;
+  left: 50%;
+  bottom: 15em;
   font-size: 1.5em;
   line-height: 1.1em;
-  width: 15%;
+  width: 30%;
   color: black;
+  line-height: 1.5em;
+  font-size: 18px;
 }
 
 #imageClient {
@@ -663,7 +666,7 @@ a:hover {
   max-height: 65%;
   position: relative;
   left: 15%;
-  top: 4em;
+  top: 5em;
   border-radius: 5%;
 }
 
@@ -841,11 +844,19 @@ z-index priority) and disables scrolling.  */
     top: 1em;
   }
   
-  .formClient {
+  .client {
     font-size: 14px;
     margin-top: 5%;
+    width: 100%;
+    font-size: 12px;
+    bottom: 0;
+    left: 10%;
   }
   
   #imageClient {
-    
+    position: relative;
+    border-radius: 5%;
+    left: 50%;
+    top: 0;
+    margin-top: 10px;
   }

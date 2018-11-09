@@ -13,42 +13,22 @@ body {
   margin: 0 auto;
 }
 
-.mainContent {
-  margin: 0 auto;
-  max-width: 600px;
-}
-
 h1 {
   font-family: "Playfair Display", sans-serif;
   font-size: 2.5em;
   font-weight: 600;
   color: #0B1014;
-  margin-bottom: 3.4em;
-  max-width: 80%;
-}
-
-.mainContent {
-  margin: 0 auto;
-  max-width: 600px;
-}
-
-h1 {
   margin: auto;
   position: relative;
-  /*top: 5em;*/
+  top: 5em;
   z-index: 1;
-  text-align: center;
-  margin-top: 1.5em;
-  margin-bottom: 1em;
 }
-
 h2 {
   font-family: "Playfair Display", sans-serif;
   font-size: 2em;
   font-weight: 600;
   color: #0B1014;
   position: relative;
-  /*top: 5em;   denne brukes på teigestova.html iirc, eller andre veien*/
 }
 
 h3 {
@@ -91,141 +71,12 @@ header {
   border-bottom-right-radius: 1%;
 }
 
-/*#logo {
-  position: absolute;
-  top: 5px;
-  left: 38%;
-  z-index: 1;
-}               denne brukes på teigestova.html, men vi må resolve id navn med annen fil så endrer på min*/
-
-/*=== Hører ikke til teigestova ===*/
 #logo {
   position: absolute;
   top: 5px;
   left: 38%;
   z-index: 1;
-  left: 75%;
-  bottom: 0em;
 }
-
-/*
-* === NAVIGATION CSS ===
-*/
-
-nav {
-  text-align: center;
-  z-index : 3;
-  position: relative;
-}
-
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  position: relative;
-}
-
-nav ul li {
-  display: inline-block;
-}
-
-nav ul li a {
-    color: #292929;
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 20px;
-    display: block;
-    font-weight: 100;
-}
-
-nav ul li:hover {
-    background-color: lightgrey;
-}
-
-nav ul ul {
-  position: absolute;
-  min-width: 200px;
-  background: lightgrey;
-  display: none;
-}
-
-nav ul ul li {
-  display: block;
-  background: grey;
-}
-
-nav ul li i {
-  color: #292929;
-  float: right;
-  padding-left: 10px;
-}
-
-nav div {
-  background: lightgrey;
-  color: #292929;
-  font-size: 24px;
-  padding: 0.3em;
-  cursor: pointer;
-  display: none;
-}
-
-/* Creating a nav for smaller screens than 768px*/
-@media(max-width: 825px) {
-  nav div {
-    display: block;
-  }
-
-  #dropdown {
-    display: none;
-    position: static;
-    background: #e3e3e3;
-  }
-
-  nav ul li {
-    display: block;
-  }
-
-  nav ul ul {
-    position: static;
-  }
-
-}
-
-/*
-* === END OF NAVIGATION CSS ===
-*/
-
-header {
-  margin-bottom: 4.2em;
-}
-
-/* === START OF FOOTER CSS === */
-
-/* the <footer> */
-#paw {
-  background-color: darkgray; /* This should probably be replaced by some form of 
-  `background-image: url("example.jpg");` see https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Backgrounds_and_Borders for more info*/
-  overflow: auto;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1em;
-  font-size: 0.8em;
-}
-
-.footerInfo {
-  padding-right: 2em;
-  padding-left: 2em;
-  display: inline-block;
-}
-
-#pawLogo {
-  height: 8em;
-  display: inline-block;
-}
-
-/* === END OF FOOTER CSS === */
 
 .intro {
   position: relative;
@@ -336,7 +187,7 @@ header {
   border-radius: 5%;
 }
 
-/*footer {
+footer {
   font-size:0.8em;
   margin-top: 5em;
 }
@@ -344,7 +195,7 @@ header {
 .footerInfo {
   float: left;
   margin-left: 25%;
-}    ganske sikker på at dette kan fjernes     */
+}
 
 a {
   color:#0B1014;
@@ -354,106 +205,6 @@ a {
 
 a:hover {
   background-color: #2F80ED;
-/*
-* === OM OSS-CSS ===
-*/
-
-.kollasje {
-  position: relative;
-  margin-top: 60px;
-  height: 550px;
-  margin-bottom: 50px;
-  display: flex;
-}
-
-#sitatOmoss {
-  position: absolute;
-  font-family: "Playfair Display";
-  font-size: 1.5em;
-  line-height: 2.3em;
-  margin-top: 40px;
-  left: 15%;
-  width: 290px;
-  height: 290px;
-  padding: 50px;
-  border: none;
-  color: white;
-  text-align: left;
-  background-color: #79947e;
-}
-
-#omoss_dog_face {
-  position: absolute;
-  left: 46%;
-  width: 160px;
-  z-index: +1;
-}
-
-#omoss_dog_prizes {
-  position: absolute;
-  left: 50%;
-  margin-right: 20px;
-  width: 390px;
-  height: 390px;
-  margin-top: 90px;
-  margin-left: 20px;
-}
-
-.sideordnet {
-  width: 100%;
-  margin-top: 50px;
-}
-
-.left-half, .right-half {
-  display: inline-block;
-  width: 50%;
-  margin: auto;
-  vertical-align: top;
-  position: relative;
-}
-
-#omoss_client_with_dog {
-  float: right;
-  margin-right: 20px;
-  margin-top: 10px;
-  width: 400px;
-}
-
-#clientTextbox {
-  position: absolute;
-  width: 400px;
-  margin-left: 20px;
-}
-
-/*
-* === KONTAKT OSS-CSS ===
-*/
-
-#contactIntro {
-  text-align: center;
-}
-
-#contact_client_square {
-  float: right;
-  margin-right: 20px;
-  border-radius: 50%;
-  width: 200px;
-}
-
-#contactForm {
-  float: left;
-  margin-left: 20px;
-}
-
-input[type=text], input[type=tel], textarea {
-  width: 210px;
-  padding: 2px 2px;
-}
-
-textarea {
-  height: 100px;
-  border: 1px solid #ccc;
-  resize: none;
 }
 
 /* The CSS below is necessary for the image viewer, basically it only triggers when the user presses a button and the imageView.js script is running*/
@@ -532,21 +283,8 @@ z-index priority) and disables scrolling.  */
 .previousImage {
   left: 0;
 }
-/* === End of lighbox code === */
+
 /* Under begynner jeg med en class som inneholder korrekte displays for fullsizeimage */
-/*.fullSizeImage {
+.fullSizeImage {
   display: block;
-}     === Tror dette er gammelt ===*/
-
-#map {
-  float: right;
-  margin-right: 20px;
-}
-
-#adresse {
-  margin-left: 20px;
-}
-
-#headertry {
-  width: 100%;
 }

@@ -45,6 +45,7 @@ function ourDogs_badlink(){
   ourDogs_link.addEventListener('click', function(){
     ourDogs_link.setAttribute('href', "ourDogs.html")
   })
+  ourDogs_link.setAttribute('onclick', 'ourDogs_badlink()')
   return false
 }
 
@@ -53,11 +54,12 @@ function update_navbar_click(){ //LEGG TIL OPTIONAL VALUE, SLIK AT DEN IKKE HENT
   var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
   if (w > 760){
     document.getElementById('navbar').removeEventListener('click', open_dropdown)
-    ourDogs_link.removeEventListener('click', ourDogs_badlink)
+    ourDogs_link.setAttribute('onclick', 'none')
     ourDogs_link.setAttribute('href', 'ourDogs.html')
+
   } else if (w <= 760){
     document.getElementById('navbar').addEventListener('click', open_dropdown)
-    ourDogs_link.addEventListener('click', ourDogs_badlink)
+    ourDogs_link.setAttribute('onclick', 'ourDogs_badlink(); return false;')
     if (dropdown.style.display === 'none'){
       ourDogs_link.setAttribute('href', "#")
     }

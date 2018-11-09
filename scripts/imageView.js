@@ -1,13 +1,30 @@
 /* All the variables and constants below are used to call the DOM elements necessary for the lightbox */
 const slideshow_images = document.getElementsByClassName('front_page_images');
-const image_header = document.getElementById('imageHeader');
-const image_welcome = document.getElementById('imageWelcome');
-const image_goldie = document.getElementById('goldie');
-const image_ariana = document.getElementById('ariana');
-const image_whitney = document.getElementById('whitney');
-const image_monochrome = document.getElementById('imageMonochrome');
-const image_client = document.getElementById('imageClient');
 var image_viewer = document.getElementById('imageView');
+
+
+/* Creates elements containing the full image through a loop */
+const image_gallery = [
+    "../img/velkommen_full.jpg",
+    "../img/goldie_full.jpg",
+    "../img/ariana_full.jpg",
+    "../img/whitney_full.jpg",
+]
+
+for (var j = 0; j < image_gallery.length; j++) {
+    var divContainer = document.createElement('div');
+    divContainer.className = 'viewerContent';
+    var divElement = document.createElement('div');
+    divElement.className = 'fullSizeImage';
+    var imgElement = document.createElement('img');
+    imgElement.className = 'full_image';
+    imgElement.setAttribute('src', image_gallery[j]);
+    imgElement.setAttribute('style', 'height: 100%; display: block; margin: auto;');
+    divElement.appendChild(imgElement);
+    divContainer.appendChild(divElement);
+    image_viewer.appendChild(divContainer);
+}
+
 
 /* The following function blocks the default style settings for the #imageView div.
 Since the default style had 'display: none;', the div element now displays. */
@@ -41,6 +58,15 @@ than the one which is currently the 'images' value. [images-1] is necessary sinc
 and the loop starts at 0. */
 function full_image (n) {
     var full_size = document.getElementsByClassName('fullSizeImage')
+    console.log(n)
+    if(images <= 0) {    //Må få n til å ikke kunne bli større/mindre
+        images = 1
+        return
+    }
+    if(images > image_gallery.length) {
+        images = image_gallery.length
+        return
+    }
     if (n > full_size.length) {
     }
     if (n < 1) {
@@ -51,15 +77,12 @@ function full_image (n) {
     full_size[images-1].style.display = "block";
 }
 
+function fake_form() {
+    alert('Vi har mottatt meldingen din og vil svare på den fortløpende.');
+    event.preventDefault();
+}
+
 /* 
 Planen for imageView.js er som følger:
-1. Når brukeren trykker på et vilkåerlig bildet skal de blåses opp og mørklegge bakgrunnen.
-
-2. Når dette skjer skal 2 nye submit knapper dukke opp på hver side av bildet. 
-
-3. Disse knappene skal brukes til å bla mellom bildene.
-*/
-
-/*
-Legg alle bildene inn i array og bla mellom dem gjennom denne.
+Legg bilder som skal brukes inn i tom array. Send array til modal viewer når det blir called. Fixed.
 */

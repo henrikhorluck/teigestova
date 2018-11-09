@@ -1,14 +1,11 @@
 html, body {
   position: relative;
   overflow-x: hidden;
-}
-
-div {
-  border-style: solid;
+  /*background-image: linear-gradient(to right, #C4C5BA 50%, #926F51 50%); hadde vært kult å kjøre 50/50 med dette*/
 }
 
 body {
-  background: #E0E0E0;
+  background-color: #C4C5BA;
   font-family: "Roboto", sans-serif; /*denne fonten må lastes ned og testes!!!*/
   font-size: 1em;
   font-weight: normal;
@@ -20,55 +17,6 @@ body {
   justify-content: space-between
 }
 
-.mainContent {
-  margin: 0 auto;
-  max-width: 600px;
-}
-
-h1 {
-  font-family: "Playfair Display", sans-serif;
-  font-size: 2.5em;
-  font-weight: 600;
-  color: #0B1014;
-  margin-bottom: 3.4em;
-  max-width: 80%;
-}
-
-.mainContent {
-  margin: 0 auto;
-  max-width: 600px;
-}
-
-h1 {
-  margin: auto;
-  position: relative;
-  /*top: 5em;*/
-  z-index: 1;
-  text-align: center;
-  margin-top: 1.5em;
-  margin-bottom: 1em;
-}
-
-h2 {
-  font-family: "Playfair Display", sans-serif;
-  font-size: 2em;
-  font-weight: 600;
-  color: #0B1014;
-  position: relative;
-  /*top: 5em;*/
-}
-
-h3 {
-  margin-top: 1.8em;
-  margin-bottom: 0em;
-  font-size: 1.2em;
-}
-
-h4 {
-  position: relative;
-  top: 0em;
-}
-
 div {
   line-height: 150%;
 }
@@ -77,18 +25,8 @@ p {
   margin-top: 0.5em;
 }
 
-
-#monochromeParagraph {
-  position: relative;
-  bottom: 0em;
-  left: 10%;
-  width: 30%;
-}
-
-#formClient {
-  position: relative;
-  left: 75%;
-  bottom: 0em;
+header {
+  margin-bottom: 4.2em;
 }
 
 /*
@@ -185,9 +123,6 @@ nav div {
 * === END OF NAVIGATION CSS ===
 */
 
-header {
-  margin-bottom: 4.2em;
-}
 
 /* === START OF FOOTER CSS === */
 
@@ -402,6 +337,159 @@ textarea {
   resize: none;
 }
 
+#start {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+#imageHeader {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  /*display: block;*/
+  position: relative;
+  top: 0;
+  left: 0;
+  border-bottom-right-radius: 1%;
+}
+
+#logo {
+  position: absolute;
+  top: 5px;
+  left: 38%;
+  z-index: 1;
+}
+
+.intro {
+  position: relative;
+  left: 5%;
+  top: 15%;
+  margin: 0;
+  margin-left: 48%;
+  margin-right: 10%;
+  line-height: 2em;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+#introContainer {
+  height: 100%;
+}
+
+#imageWelcome {
+  object-fit: cover;
+  max-width: 50%;
+  height: 100%;
+  position: relative;
+  float: left;
+  border-bottom-right-radius: 5%;
+}
+
+.dogs {
+  position: relative;
+  width: 100%;
+  height: 80%;
+  padding-top: 5%;
+}
+
+.dogsText {
+  text-align: center;
+  max-width: 25%;
+  height: 10%;
+  margin: 1% 5%;
+  position: relative;
+  top: 5%;
+  float: left;
+  width: 23%;
+}
+
+.dogs > h2 {
+  position: relative;
+  top: 5%;
+  text-align: center;
+}
+
+.imageDogs {
+  object-fit: cover;
+  width: 22%;
+  height: 50%;
+  margin: 0% 5%;
+  position: relative;
+  top: 5%;
+  float: left;
+  border-style: double;
+  border-color: black;
+  border-radius: 5%;
+}
+
+#monochrome {
+  max-width: 100%;
+}
+
+.monochromeParagraph {
+  position: relative;
+  margin: 5% 5% 0 5%;
+  float: left;
+  max-width: 40%;
+  text-align: left;
+  line-height: 1.5em;
+  font-size: 1.5em;
+}
+
+#imageMonochrome {
+  object-fit: cover;
+  max-width: 50%;
+  height: 100%;
+  margin: 0;
+  position: relative;
+  border-top-left-radius: 5%;
+  border-bottom-left-radius: 5%;
+}
+
+#contactContainer {
+  height: 75%;
+}
+
+.formClient {
+  position: relative;
+  left: 55%;
+  bottom: 13em;
+  font-size: 1.5em;
+  line-height: 1.1em;
+  width: 15%;
+  color: black;
+}
+
+#imageClient {
+  max-width: 25%;
+  max-height: 65%;
+  position: relative;
+  left: 15%;
+  top: 4em;
+  border-radius: 5%;
+}
+
+footer {
+  font-size:0.8em;
+  margin-top: 5em;
+}
+
+.footerInfo {
+  float: left;
+  margin-left: 25%;
+}
+
+a {
+  color:#0B1014;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: #2F80ED;
+}
+
 /* The CSS below is necessary for the image viewer, basically it only triggers when the user presses a button and the imageView.js script is running*/
 
 /* The imageViewer class is used on the div element conatining image which should not be displayed unless the user clicks on a picture,
@@ -412,7 +500,6 @@ z-index priority) and disables scrolling.  */
   position: fixed;
   top: 0;  /* Need to specify this in order for z-index to work */
   left: 0;
-  padding-top: 100px;
   background-color: black;
   z-index: 1;
   width: 100%;
@@ -423,7 +510,7 @@ z-index priority) and disables scrolling.  */
 /* This is used for the content itself, setting the parameters for how much of the screen it can cover. */
 .viewerContent {
   position: relative;
-  background-color: #fefefe;
+  background-color: black;
   margin: auto;
   padding: 0;
   width: 90%;
@@ -436,7 +523,16 @@ z-index priority) and disables scrolling.  */
   position: absolute;
   top: 10px;
   right: 25px;
-  color: hotpink;
+  font-size: 35px;
+  font-weight: bold;
+  color: rgba(146, 111, 81, 0.8);
+}
+
+.closeViewer:hover,
+.closeViewer:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 /*The following function disables the display of all the full sized images (by class tag).*/
@@ -448,10 +544,17 @@ z-index priority) and disables scrolling.  */
 /* Styles the 'previous image' and 'next image' buttons. */
 
 .nextImage, .previousImage {
+  cursor: pointer;
   position: absolute;
   top: 50%;
-  color: hotpink;
-  transition: 1s ease;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: rgba(146, 111, 81, 0.8);
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
   user-select: none;
   -webkit-user-select: none;
 }
@@ -488,4 +591,8 @@ z-index priority) and disables scrolling.  */
 #just_blocking {
   height: 0px;
   border-style: none;
+}
+/* Under begynner jeg med en class som inneholder korrekte displays for fullsizeimage */
+.fullSizeImage {
+  display: block;
 }

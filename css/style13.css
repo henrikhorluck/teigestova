@@ -167,12 +167,14 @@ nav div {
   nav ul ul {
     position: static;
   }
-
 }
 
-#hunder:hover #under_hunder {
-  display: block;
+@media(min-width: 761px) {
+  #hunder:hover #under_hunder {
+    display: block;
+  }
 }
+
 
 /*
 * === END OF NAVIGATION CSS ===

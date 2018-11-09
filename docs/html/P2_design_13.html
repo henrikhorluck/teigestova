@@ -1,0 +1,468 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <title>P1 Requirements 13</title>
+        <meta charset = "UTF-8"/>
+        <link rel="stylesheet" href="../css/style.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Gothic+A1" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Roboto" rel="stylesheet">
+        <link rel="icon" type="image/png" href="../img/faviconpaw.png" sizes="32x32"/>
+    </head>
+    
+    <body>
+      
+       <header>
+         <h1>P2 Project Design</h1>
+         <p id="authors"> HEDVIG TØNNESEN, HENRIK HØRLÜCK BERG, JON-INGE HEGGSTAD, MALI MALMEDAL OG SIMEN OPEDAL</p>
+         <p id="date"> <time datetime="2018-10-08">October 11, 2018</time> </p>
+       </header>
+       
+       <section id="intro" class="paragraph">
+         <h2 >Administrative details</h2>
+         <ul>
+           <li><p>Client Name: Birgitte Heggstad</p></li>
+           <li><p>Position: Owner of the kennel </p></li>
+         </ul>
+        </section>
+
+        <section id="purpose" class="paragraph">
+          <h2>Website's Purpose, goals and audience</h2>
+          <p>The client’s aim with the website is to have a place to gather all the necessary information about her dogs and newly established kennel. She believes this is essential as starting next year, one of her show dogs will produce a litter of purebred dogs, of the breed “Bichon Havanais”, whom will need new homes. Through this website potential future dog owners will be able to read about the client’s dogs and puppies as well as getting the necessary information about the breed and kennel. This will leave a positive impression on buyers which will influence their decision when choosing who they want to buy their dog from. Birgitte also wants the site to be informative to friends and family as well.</p>
+        </section>
+
+        <section id="navigation" class="paragraph">
+            <h2>Navigation Structure</h2>
+            <p>
+                Teigestova’s website has to be easy to navigate through as the primary function is to catch the interest of potential buyers whom most likely aren’t tech-savvy. We want the user to be able to reach every category-page, of particular relevance to a potential buyer, from the front page. The user should be able to reach every page in a category from this landing page. In practice, this means that every page on the website should be reached within two-three clicks. Every page will be available from the main page when using the drop-down navigation bar.
+
+                By structuring the page this way, the user will be able to easily access the content of most interest while still receiving information about the general content on the page. The main page will inform the user about categories such as “Om Teigestova” and “Våre hunder”. When redirected to those categories, they will be able to access every webpage connected to the category. The user could also use the navigation bare if they want to immediately access a specific page.
+
+                Figure 1 shows the navigation structure without the use of the navigation bar. We’ve not included a figure with the navigation bar, because every subpage is available at all times. This is because the navigation bar will follow on every page. It would therefore appear too cluttered if we were to draw lines between each seperate html file we intend to use..
+            
+                <img id="navimg" src="../img/Navigation%20structure.jpg" title="Navigation structure" alt="Shows the navigation structure">
+                <figcaption>Figure 1: Shows the navigation structure if the user moves through the webpage without using the navigation bar</figcaption>
+            </p>
+                
+        </section>
+
+        <section id="layout" class="paragraph">
+          <h2>Page Layout and Appearance</h2>
+          <ul>
+            Fonts: Types and sizes
+            <li>H1: Playfair Display Bold, 48px (bakck-up: Georgia, Bold, 48 px)</li> 
+            <li>H2: Playfair Display Bold, 36px (bakck-up: Georgia, Bold, 36 px)</li> 
+            <li>P: Roboto Regular, 24 px (back-up: Verdana Regular, 24 px)</li>
+            <li>Nav button text: Roboto Light, 36 px</li> 
+            <li>Color scheme</li> 
+            <li>Text: #484646</li> 
+            <li>Background: #E0DADA</li>
+            <li>Links: #39CCCC</li> 
+            <li>Shadows: N/a</li>
+            <li>Borders: 484646</li>
+          </ul>
+           <ul>
+            Navbar 
+            <li>Position on the page: Top</li> 
+            <li>Appearance: Integrated in background</li>
+            <li>Banner: Dog images</li> 
+            <li>Footer: Dog image with green gradient overlay, white logo, white contact information and menu items</li>
+            <li>Social icons bar: One-color, transparent background, (#484646 or #F5F5F5)</li> 
+        </ul>
+        </section>
+
+        <section id="content" class="paragraph">
+            <h2>Content</h2>
+                <h3>Home</h3>
+                <p>
+                    The home page will be the users first impression of the website. The purpose is to make the user feel welcome and to make Teigestova appear professional. The design will be clean and we want the user to be able to navigate and find the desired information without any hassle.
+
+                    At the top of the front page we will have a large and high-quality picture of the dog(s). Under the picture and at the bottom of the browser window we will include the navigation bar. As the user scrolls down the bar will move towards the top and stay there. This feature will be implemented by using Java script. As the user is scrolling down we will include more.
+
+                    We want there to be more than just a picture and a navigation bar at the front page although we do not want to overwhelm the user with text and information. As the user scrolls down there will be three different stories and a picture. The first story will have text on the left side and the picture on the right. The next story will have text on the right side and a picture on the left and the last will have text on the left side and a picture on the right side. By doing this we create a more natural transition and distinguish between the stories that will be highlighted in the home page.
+                </p>
+                
+                <img src="../img/mockup-home.png" alt="Mockup av hjemmeside">
+                
+                <h3>About</h3>
+                <p>
+                    This section will inform the users of what Teigestova is and give general information about its business. It will follow the universal layout of the site and consist of text and pictures. The purpose is to make the information easily accessible and we will not include unnecessary design features that can distract the user.
+                    
+                    Instead of having a wall of text we will divide it into paragraphs and sub-sections. The pictures will be positioned to the right or between sub-sections. The navigation bar will always be present at the top of the browser window. It will stay there when the user is scrolling down to make it easy to navigate to other sections of the website.
+            </p>
+               
+               <img src="../img/mockup-om-oss.png" alt="Mockup av om oss">
+                
+                <h3>Our Dogs</h3>
+                <p>
+                    This will be a more in-depth page of the dogs used in the breeding process and not the ones for sale. It is important to portray them in a good way as they will give the user an impression of what the puppies will be and look like. The purpose is to portray the dogs in a good way so that the user will be interested in buying one of their puppies.
+                    
+                    The page will have a sub-section for each of the dogs where we will include pictures, text and a “fact box”. We will start each section with a picture at the top followed by a short introduction including the fact box. AS the user scrolls down we will include a more detailed description and text as well as including more pictures.
+                    
+                    The fact box will have information about color, height, length etc.
+                    
+                    The navigation bar will constantly stay at the top of the browser window.
+                </p>
+                
+                <img src="../img/mockup-v%C3%A5re-hunder.png" alt="Mockup av våre hunder">
+                
+                <h3>Puppies</h3>
+                <p>
+                    This will be the section about the puppies. The goal is to make the user interested and ideally want to buy one of the puppies.  
+                    We want each puppy to be presented in an own paragraph that will consist of basic facts, an introduction and a picture. The picture will be positioned to the right of the text and facts.
+
+                    We want to include a lot of pictures in this section. Having them all appear simultaneously would make the page unnecessarily long. Instead we will implement a slideshow feature. When the user opens the slide-show it will “elevate” a bit from the page and highlight the picture. The rest of the page will be blurred out to make the picture in focus. The user can then scroll from picture to picture using the next buttons and end the slideshow by clicking anywhere on the blurred-out part of the page. The navigation bar will constantly stay at the top of the browser window. Other than that the page will follow the universal layout of the website.
+                </p>
+                
+                <h3>Bichon havanais</h3>
+                <p>
+                    In this section we will introduce the user to Bichon Havanais. It will include information about the breed, advantages/disadvantages, who the dog is fit for and other general information. The purpose is to give the user a good indication as to what it is like to own a Bichon
+
+                    The page will be divided into paragraphs and sub-sections.
+                </p>
+                
+                <img src="../img/mockup-bichon-havanais.png" alt="Mockup av rasen Bichon Havanais">
+                
+                <h3>Activities and awards</h3>
+                <p>
+                This section will highlight the awards and activities of the dogs used in the breeding process. The achievements of the dogs is of importance to potential buyers as it is a good indication of what the puppies might be like.
+                
+                This section will include pictures from dog shows and other activities.
+                </p>
+                
+                <h3>Contact</h3>
+                <p>
+                    The contact section will include contact information such as e-mail, phone number, address and links to social media. The purpose is to make it easy for users to contact Teigestove in case they want more information. The design will be clean, and it will consist of mainly text with description on how to contact Teigestova. The email address will be an e-mail link and the social media links will appear as icons instead of a long URL. The navigation bar will stick to the top of the browser window.
+                </p>
+                
+                <img src="../img/mockup-kontaktinfo.png" alt="Mockup av kontaktinfo">
+        </section>
+
+        <section id="minimumreq" class="paragraph">
+            <h2>Minimum Requirements</h2>
+            <p>We plan on fulfilling the minimum requirements for JavaScript-applications </p>
+            <dl>
+                <dt>imageView.js</dt>
+                <dd>
+                    Javascript function that allows us to use make a slideshow with pictures of the dogs, so that the user can view the dogs in different activities. Darkens the background and makes the image 'pop' in the middle of the screen.
+                    <p>Jon-Inge is in charge of implimentation.</p>
+                </dd>
+                <dt>dropDown.js</dt>
+                <dd>
+                    A function that makes the dropdown-menu work, for easy navigation around the site. 
+                    <p>Hedvig is charge of the implementation</p>
+                </dd>
+                <dt>menuBar.js</dt>
+                <dd>
+                    Makes the header move from the bottom of the page at the start of the homepage, and then moves and attaches to the top of the page.
+                    <p>Simen is responsible.</p>
+                </dd>
+                <dt>dynamicDogs.js</dt>
+                <dd>
+                    Makes the page ourDogsParent.html dynamic, so that the user can click on pictures and see in-depth information about the different dogs Goldie, Ariana and Whitney.
+                    <p>Henrik will do it.</p>
+                </dd>
+            </dl>
+            <p>We also plan on including the html of the footer and menubar on each page with the help of Javascript, so that we don't have to repeat it for each page.</p>
+        </section>
+
+        <section id="plan" class="paragraph"> <!-- Kunne laget JS for å importe, men usikker på det så la inn manuelt -->
+            
+            <h2>Plan</h2>
+            
+            <p>
+                The table below shows all of our html, css and script files as well as who is in charge of producing and maintaining said files. We've decided to split the scripts between four members in the group and the last one will make sure the CSS file works as intended upon final delivary. We believe we have split the workload evenly among all group members. The individuals responsible for a file won't necessarily have to do all the work themselves, but they are responsible for making sure that the task is completed on the due date. We intend to be done with everything by monday the fifth of november, leaving us with a week of testing, proofreading and making any potential last minute changes if necessary.
+            </p>
+            
+            <table id="table1">
+            
+                <tr id="tableSummary">
+                    <th colspan="4">P3 Coding Deliverables</th>
+                </tr>
+
+                <tr id="tableHeader">
+                    <th>Filename</th>
+                    <th>Description</th>
+                    <th>Responsible</th>
+                    <th>Deadline</th>
+                </tr>
+
+                <tr class="tableInfo">
+                <td>teigestova.html</td>
+                <td>Home page of the website.</td>
+                <td>Jon-Inge</td>
+                <td>24.10.18</td>    
+                </tr>
+
+                <tr class="tableInfo">
+                <td>ourDogs.html</td>
+                <td>Information about the mother dogs used to breed. Landing page for the pages “ourDogsParent.html”, “ourDogsPuppies.html”, and “ourDogsActivities.html”.</td>
+                <td>Mali</td>
+                <td>24.10.18</td>    
+                </tr>
+
+                <tr class="tableInfo">
+                <td>ourDogsParent.html</td>
+                <td>Introduction to the parent dogs. This page will be dynamic through the use of javascript, infomation about the dogs belonging to the kennel will be displayed here when the user clicks on one of the dogs.</td>
+                <td>Henrik</td>
+                <td>24.10.18</td>    
+                </tr>
+
+                <tr class="tableInfo">
+                <td>ourDogsPuppies.html</td>
+                <td>Information about upcoming litters.</td>
+                <td>Henrik</td>
+                <td>24.10.18</td>    
+                </tr>
+
+                <tr class="tableInfo">
+                <td>ourDogsActivites.html</td>
+                <td>Information about shows, awards, agility training, and other activities.</td>
+                <td>Simen</td>
+                <td>24.10.18</td>    
+                </tr>
+
+                <tr class="tableInfo">
+                <td>about.html</td>
+                <td>Information about what Teigestova is, general information about its business. </td>
+                <td>Hedvig</td>
+                <td>24.10.18</td>    
+                </tr>
+
+                <tr class="tableInfo">
+                <td>bichonHavanais.html</td>
+                <td>General information about the breed, advantages/disadvantages, who the dog is fit for, etc. </td>
+                <td>Simen</td>
+                <td>24.10.18</td>    
+                </tr>
+
+                <tr class="tableInfo">
+                <td>contact.html</td>
+                <td>Contact information. Includes integration of Google Maps. </td>
+                <td>Hedvig</td>
+                <td>24.10.18</td>    
+                </tr>
+
+                <tr class="tableInfo">
+                <td>style.css</td>
+                <td>Everyone will add new styling, but Mali is responsible for maintaining the file and make sure that it works.</td>
+                <td>Mali</td>
+                <td>31.10.18</td>    
+                </tr>
+
+                <tr class="tableInfo">
+                <td>imageView.js</td>
+                <td></td>
+                <td>Jon-Inge</td>
+                <td>05.11.18</td>    
+                </tr>
+
+                <tr class="tableInfo">
+                <td>dropDown.js</td>
+                <td></td>
+                <td>Hedvig</td>
+                <td>05.11.18</td>    
+                </tr>
+
+                <tr class="tableInfo">
+                <td>menuBar.js</td>
+                <td></td>
+                <td>Simen</td>
+                <td>05.11.18</td>    
+                </tr>
+
+                <tr class="tableInfo">
+                <td>dynamicDogs.js</td>
+                <td></td>
+                <td>Henrik</td>
+                <td>05.11.18</td>    
+                </tr>
+
+                <tr class="tableInfo">
+                <td>logoMain.png</td>
+                <td>Logo to be used in the middle of the navigation bar. </td>
+                <td>Mali og Hedvig</td>
+                <td>28.10.18</td>    
+                </tr>
+
+                <tr class="tableInfo">
+                <td>Menu elements</td>
+                <td>Design the five menu elements. </td>
+                <td>Mali</td>
+                <td>28.10.18</td>    
+                </tr>
+
+                <tr class="tableInfo">
+                <td>header_nav.part</td>
+                <td></td>
+                <td></td>
+                <td></td>    
+                </tr>
+
+                <tr class="tableInfo">
+                <td>footer.part</td>
+                <td></td>
+                <td></td>
+                <td></td>    
+                </tr>
+
+                <tr class="tableInfo">
+                <td>Text files</td>
+                <td>Receive text files from Teigestova </td>
+                <td>Jon-Inge</td>
+                <td>15.10.18</td>    
+                </tr>
+
+                <tr class="tableInfo">
+                <td>Images</td>
+                <td>1 main image and 3 smaller, images per dog, Image of owner </td>
+                <td>Hedvig</td>
+                <td>31.10.18</td>    
+                </tr>
+
+                <tr class="tableInfo">
+                <td>Text editing</td>
+                <td>Final proof-reading of text. </td>
+                <td>Hedvig</td>
+                <td>08.11.18</td>    
+                </tr>
+
+                <tr class="tableInfo">
+                <td>Basic SEO implementation</td>
+                <td></td>
+                <td>Hedvig</td>
+                <td>31.10.18</td>    
+                </tr>
+
+                <tr class="tableInfo">
+                <td>Final controls</td>
+                <td></td>
+                <td>All</td>
+                <td>05.11.18</td>    
+                </tr>
+
+                <tr class="tableInfo">
+                <td>Testing</td>
+                <td></td>
+                <td>All</td>
+                <td>07.11.18</td>    
+                </tr>
+
+                <tr class="tableInfo">
+                <td>P3_changes.html</td>
+                <td>Document detailing and justifying all substantive changes from the design; describing how the team members fulfilled their minimum requirements; which person worked on which files; and indicating how the modularity requirement was handles and who was responsible for the implementation. </td>
+                <td>All</td>
+                <td>08.11.18</td>    
+                </tr>
+
+                <tr class="tableInfo">
+                <td>Upload file directory to folk.ntnu.no and Blackboard</td>
+                <td></td>
+                <td>Mali</td>
+                <td>08.11.18</td>    
+                </tr>
+
+            </table>
+            
+            <p>
+                Below is a table detailing the file structure. Inside of the "docs" folder, there'll be seperate folders for "html", "img", "scripts" and "css".
+            </p>
+            
+            <table id="table2">
+               <tr>
+                   <th colspan="3">docs</th>
+               </tr>
+               
+                <tr>
+                    <th>html</th>
+                    <th>img</th>
+                    <th>scripts</th>
+                </tr>
+                
+                <tr>
+                    <td>teigestova.html</td>
+                    <td>logo.png</td>
+                    <td>imageView.js</td>
+                </tr>
+                
+                <tr>
+                    <td>ourDogs.html</td>
+                    <td>dogMain.jpg</td>
+                    <td>dropDown.js</td>
+                </tr>
+                
+                <tr>
+                    <td>ourDogsParent.html</td>
+                    <td>aboutMain.jpg</td>
+                    <td>menuBar.js</td>
+                </tr>
+                
+                <tr>
+                    <td>ourDogsPuppies.html</td>
+                    <td>bichonMain.jpg</td>
+                    <td>dynamicDogs.js</td>
+                </tr>
+                
+                <tr>
+                    <td>ourDogsActivites.html</td>
+                    <td>activitiesMain.jpg</td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>about.html</td>
+                    <td>goldie1.jpg</td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>bichonHavanais.html</td>
+                    <td>goldie2.jpg</td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>contact.html</td>
+                    <td>ariana1.jpg</td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td></td>
+                    <td>ariana2.jpg</td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td></td>
+                    <td>whitney1.jpg</td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td></td>
+                    <td>teigestova.jpg</td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td></td>
+                    <td>contact.jpg</td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                   <th colspan="3">css</th> 
+                </tr>
+                
+                <tr>
+                    <td colspan="3">style.css</td>
+                </tr>
+            </table>
+            
+        </section>
+        
+        <footer>Made by Hedvig, Henrik, Jon, Mali og Simen.</footer>
+    </body>
+</html>

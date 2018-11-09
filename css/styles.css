@@ -1,0 +1,182 @@
+body {
+  background-color: #E0DADA;
+}
+
+p {
+  font-size: 24px;
+}
+
+header {
+  text-align: center;
+}
+
+h1 {
+  font-size: 48px;
+  text-align: center;
+  font-family: "Playfair Display", Georgia, sans-serif;
+}
+
+h2 {
+  font-size: 36px;
+  text-align: center;
+  font-family: "Playfair Display", Georgia, sans-serif;
+  margin-bottom: 0px;
+}
+
+.tekstBic {
+  margin-bottom: 10%;
+}
+
+#tekstBic {
+  text-align: justify;
+  position: relative;
+  width: 60%;
+  left: 20%;
+  right: 20%;
+  color: #484646;
+  font-family: "Roboto", sans-serif;
+}
+
+#toppBic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+#link {
+  text-align: center;
+}
+
+#link a {
+  color: #39CCCC
+}
+
+#listeBic li {
+  font-size: 24px;
+}
+
+#tekstAct {
+  text-align: justify;
+  position: relative;
+  width: 80%;
+  left: 10%;
+  right: 10%;
+  color: #484646;
+  font-family: "Roboto", sans-serif;
+}
+
+#toppbilde {
+  width: 100%;
+}
+
+#topp {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#shows {
+  display: inline-block;
+  margin-bottom: 5%;
+}
+
+#shows p {
+  width: 45%;
+  margin-left: 2%;
+}
+
+#shows img {
+  width: 50%;
+  float: right;
+  overflow: auto;
+  margin-top: 7%;
+  margin-right: 1%;
+
+}
+
+#awards {
+  display: inline-block;
+  margin-bottom: 5%;
+}
+
+#awards img {
+  width: 50%;
+  float: left;
+  margin-top: 7%;
+  margin-right: 1%;
+}
+
+#awards p {
+  width: 45%;
+  float: right;
+  margin-right: 2%;
+}
+
+#agility {
+  display: inline-block;
+  margin-bottom: 5%;
+}
+
+#agility img {
+  width: 50%;
+  float: right;
+  margin-top: 7%;
+  margin-right: 1%;
+}
+
+#agility p {
+  width: 45%;
+  float: left;
+  margin-left: 2%;
+}
+
+@media (max-width: 1000px) {
+  #tekstAct {
+    width: 90%;
+    left: 5%;
+    right: 5%;
+  }
+  #shows img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 100%;
+  }
+  #shows p {
+    width: 100%;
+  }
+  #awards img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 100%;
+  }
+  #awards p {
+    width: 100%;
+  }
+  #agility img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 100%;
+  }
+  #agility p {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1000px) {
+  #tekstBic {
+    width: 80%;
+    left: 10%;
+    right: 10%;
+  }
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000
+}

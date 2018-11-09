@@ -154,7 +154,7 @@ nav div {
 }
 
 /* Creating a nav for smaller screens than 768px*/
-@media(max-width: 825px) {
+@media(max-width: 760px) {
   nav div {
     display: block;
   }
@@ -172,8 +172,14 @@ nav div {
   nav ul ul {
     position: static;
   }
-
 }
+
+@media(min-width: 761px) {
+  #hunder:hover #under_hunder {
+    display: block;
+  }
+}
+
 
 /*
 * === END OF NAVIGATION CSS ===

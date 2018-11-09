@@ -11,13 +11,10 @@ body {
   font-weight: normal;
   color: #0B1014;
   margin: 0 auto;
-<<<<<<< HEAD
   display: flex;
   min-height: 100vh;
   flex-direction: column;
   justify-content: space-between
-=======
->>>>>>> 02bda86b6a9d1174c04d01b73588180ded4964ef
 }
 
 div {

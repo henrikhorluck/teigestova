@@ -9,7 +9,7 @@ navigation_bar.innerHTML = `<div id="navbar">
     <ul id="dropdown">
         <li><a href="teigestova.html">Hjem</a></li>
         <li><a href="about.html">Om oss</a></li>
-        <li id="hunder"><a href="#">Våre hunder<i class="fas fa-angle-down"></i></a>
+        <li id="hunder"><a href="ourDogs.html">Våre hunder<i class="fas fa-angle-down"></i></a>
               <ul id="under_hunder">
                     <li><a href="ourDogsParent.html?goldie">Goldie</a></li>
                     <li><a href="ourDogsParent.html?ariana">Ariana</a></li>
@@ -41,23 +41,9 @@ under_hunder = document.getElementById('under_hunder')
 */
 window.onresize = function (){
   var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-  if (w > 825){
+  if (w > 760){
     dropdown.style.display = "block";
-  } else if (w <= 825){
+  } else if (w <= 760){
     dropdown.style.display = "none"
   }
-  under_hunder.style.display = "none"
 }
-/*
-nav ul li:hover ul {
-  display: block;
-}
-*/
-
-hunder.addEventListener('click', function (){
-  if (under_hunder.style.display != 'block') {
-    under_hunder.style.display = 'block';
-  } else {
-    under_hunder.style.display = "none";
-  }
-})

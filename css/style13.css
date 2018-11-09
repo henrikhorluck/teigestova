@@ -149,7 +149,7 @@ nav div {
 }
 
 /* Creating a nav for smaller screens than 768px*/
-@media(max-width: 825px) {
+@media(max-width: 760px) {
   nav div {
     display: block;
   }
@@ -168,6 +168,10 @@ nav div {
     position: static;
   }
 
+}
+
+#hunder:hover #under_hunder {
+  display: block;
 }
 
 /*
@@ -466,3 +470,4 @@ z-index priority) and disables scrolling.  */
 #headertry {
   width: 100%;
 }
+

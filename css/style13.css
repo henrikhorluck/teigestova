@@ -356,8 +356,7 @@ textarea {
 
 #logo {
   position: absolute;
-  top: 5px;
-  left: 38%;
+  top: 3em;
   z-index: 1;
 }
 

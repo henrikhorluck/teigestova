@@ -58,7 +58,6 @@ than the one which is currently the 'images' value. [images-1] is necessary sinc
 and the loop starts at 0. */
 function full_image (n) {
     var full_size = document.getElementsByClassName('fullSizeImage')
-    console.log(n)
     if(images <= 0) {    //Må få n til å ikke kunne bli større/mindre
         images = 1
         return

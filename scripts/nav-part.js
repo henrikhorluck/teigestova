@@ -10,12 +10,12 @@ navigation_bar.innerHTML = `<div id="navbar">
         <li><a href="teigestova.html">Hjem</a></li>
         <li><a href="about.html">Om oss</a></li>
         <li id="hunder"><a id="ourDogs_link" href="#">Våre hunder<i class="fas fa-angle-down"></i></a>
-              <ul id="under_hunder">
-                    <li><a href="ourDogsParent.html?goldie">Goldie</a></li>
-                    <li><a href="ourDogsParent.html?ariana">Ariana</a></li>
-                    <li><a href="ourDogsParent.html?whitney">Whitney</a></li>
-                    <li><a href="ourDogsPuppies.html">Valper</a></li>
-                    <li><a href="ourDogsActivities.html">Aktiviteter</a></li>
+              <ul>
+                    <li class="under_hunder"><a href="ourDogsParent.html?goldie">Goldie</a></li>
+                    <li class="under_hunder"><a href="ourDogsParent.html?ariana">Ariana</a></li>
+                    <li class="under_hunder"><a href="ourDogsParent.html?whitney">Whitney</a></li>
+                    <li class="under_hunder"><a href="ourDogsPuppies.html">Valper</a></li>
+                    <li class="under_hunder"><a href="ourDogsActivities.html">Aktiviteter</a></li>
               </ul>
 
         </li>
@@ -35,12 +35,10 @@ function open_dropdown() {
 };
 
 hunder = document.getElementById('hunder')
-under_hunder = document.getElementById('under_hunder')
+under_hunder = document.getElementsByClassName('under_hunder')
 ourDogs_link = document.getElementById('ourDogs_link')
 
-/* Sjekker når nettleservinduet blir resiza, og endrer display-modusen til
-* dropdownen, slik at den vises riktig
-*/
+
 function ourDogs_badlink(){
   ourDogs_link.addEventListener('click', function(){
     ourDogs_link.setAttribute('href', "ourDogs.html")
@@ -49,38 +47,40 @@ function ourDogs_badlink(){
   return false
 }
 
-
-function update_navbar_click(){ //LEGG TIL OPTIONAL VALUE, SLIK AT DEN IKKE HENTER INN VERDI TO GANGER
+function openOurDogs() {
+  for (let i = 0; i < under_hunder.length; i++) {
+      under_hunder[i].style.height = '50px';	
+  }
+}
+  
+window.addEventListener('resize', update_navbar)
+function update_navbar(){
   var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
   if (w > 760){
+    // So you can't open the navbar on large screen
     document.getElementById('navbar').removeEventListener('click', open_dropdown)
+    // so you can't click to open the sub-menu whe the screen is wide
+    hunder.removeEventListener('click', openOurDogs)
+    // So you can click the 'Våre Hunder' when widescreen
     ourDogs_link.setAttribute('onclick', 'none')
     ourDogs_link.setAttribute('href', 'ourDogs.html')
-
-  } else if (w <= 760){
-    document.getElementById('navbar').addEventListener('click', open_dropdown)
-    ourDogs_link.setAttribute('onclick', 'ourDogs_badlink(); return false;')
-    if (dropdown.style.display === 'none'){
-      ourDogs_link.setAttribute('href', "#")
-    }
-  }
-}
-update_navbar_click()
-
-window.onresize = function (){
-  var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-  if (w > 760){
+    // opens the mobile menu
     dropdown.style.display = "block";
   } else if (w <= 760){
+    // opening navbar
+    document.getElementById('navbar').addEventListener('click', open_dropdown)
+    // can open the sub-menu, and the click on the same button again, also doesn't reload page
+    ourDogs_link.setAttribute('onclick', 'openOurDogs(); ourDogs_badlink(); return false;')
+    // closes the mobile-menu
     dropdown.style.display = "none"
   }
-  update_navbar_click()
+  // resets the closd sub-menu
+  if (under_hunder[0].style.height == '50px') {	
+    for (let i = 0; i < under_hunder.length; i++) {
+      under_hunder[i].style.height = "0";  
+    }
+  }
+  //resets the linking, so you can open the sub-menu again
+  
 }
-
-hunder.addEventListener('click', function (){	
-  if (under_hunder.style.display != 'block') {	
-    under_hunder.style.display = 'block';	
-  } else {	
-    under_hunder.style.display = "none";	
-  }	
-})
+update_navbar()

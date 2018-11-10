@@ -36,7 +36,6 @@ header {
 nav {
   text-align: center;
   z-index : 3;
-  position: relative;
   background-color: #E0E0E0;
 }
 
@@ -65,10 +64,8 @@ nav ul li:hover {
 }
 
 nav ul ul {
-  position: absolute;
   min-width: 200px;
   background: lightgrey;
-  display: none;
 }
 
 nav ul ul li {
@@ -91,6 +88,22 @@ nav div {
   display: none;
 }
 
+nav li ul {
+  position:absolute;
+}
+nav li ul li {
+  overflow:hidden;
+  height:0;
+  -webkit-transition:height 200ms ease-in;
+  -moz-transition:height 200ms ease-in;
+  -o-transition:height 200ms ease-in;
+  transition:height 200ms ease-in;
+}
+@media(min-width: 761px) {
+  nav ul > li:hover ul li {
+    height: 50px;
+  }
+}
 /* Creating a nav for smaller screens than 768px*/
 @media(max-width: 760px) {
   nav div {
@@ -111,13 +124,6 @@ nav div {
     position: static;
   }
 }
-
-@media(min-width: 761px) {
-  #hunder:hover #under_hunder {
-    display: block;
-  }
-}
-
 
 /*
 * === END OF NAVIGATION CSS ===

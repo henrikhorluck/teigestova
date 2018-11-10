@@ -13,8 +13,8 @@ paw.innerHTML = `<ul class="footerInfo">
     Teigestova Kennel<br>
     Breivikveien 133<br>
     6014 Ålesund<br>
-    Tlf: <a href="tel:+47-999-99-999">999 99 999</a><br>
-    E-post: <a href="mailto:teigestova@gmail.com">teigestova@gmail.com</a>
+    Tlf: <a href="tel:+47-417-61-xxx">417-61-492</a><br>
+    E-post: <a href="mailto:birgitte.heggstad@mimer.no">birgitte.heggstad@mimer.no</a>
 </address>`
 
     

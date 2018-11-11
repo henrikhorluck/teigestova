@@ -16,61 +16,72 @@
 <body>
 <!-- This is the main part of our website. The idea is a relatively long frontpage where the user can either scroll down to get a relatively short summary of everything else on the side. -->
     <div id="teigestova">
-        <div id="start"></div>
-            <img id="imageHeader" class="front_page_images" src="../img/intro_picture.jpg" alt="Bilde av de tre hundene som Teigestova kennel består av.">
-            <img id="logo" src="../img/logo-neg-hvit-liten.png" alt="Logo til Teigestova">
-        </div>
+    <div id="start">
+        <img id="imageHeader" src="../img/coverTeigestova.jpg" alt="Bilde av de tre hundene som Teigestova kennel består av.">
+        <img class="logo" src="../img/logo-neg-hvit-liten.png" alt="Logo til Teigestova">
+    </div>
 
     <nav id='navigation_bar'></nav>
     <script src="../scripts/nav-part.js"></script>
     <div id="just_blocking"></div>
 
-    <div id="introContainer">
-        <img id="imageWelcome" class="front_page_images" src="../img/velkommen_full.jpg" onclick="open_image(); current_image(1);" alt="">
+     <div id="introContainer">
+        <img id="imageWelcome" src="../img/teigestovaVelkommen.png" onclick="open_image(); current_image(1);" alt="">
         <h2 class="intro">Velkommen til Teigestova!</h2>
-        <p class="intro"> Vi er en familie fra Ålesund som driver et lite
-          oppdrett av Bichon Havanais. Målet er å avle fram sunne, rasetypiske
-          hunder som lever lenge, er snille og sosiale. Vi har i dag tre
-          havanaiser som bor inne hos oss som fullverdige familiemedlemmer.
-          På denne siden kan du bli bedre kjent med vår lille kennel og
-          hundene våre, og du kan lese om hva du bør tenke på om du vurderer
+        <p class="intro"> Vi er en familie fra Ålesund som driver et lite oppdrett av Bichon Havanais.
+          Målet er å avle fram sunne, rasetypiske hunder som lever lenge, er snille og sosiale. Vi har i dag
+          tre havanaiser som bor inne hos oss som fullverdige familiemedlemmer. På denne siden kan du bli
+          bedre kjent med vår lille kennel og hundene våre, og du kan lese om hva du bør tenke på om du vurderer
           å kjøpe en Bichon Havanais-valp.
         </p>
     </div>
 
-        <div class="dogs">
-            <h2>Hils på hundene våre</h2>
-                <img id="goldie" class="imageDogs" class="front_page_images" src="../img/goldie.jpg" alt="" onclick="open_image(); current_image(2);">
-                <img id="ariana" class="imageDogs" class="front_page_images" src="../img/ariana.jpg" alt="" onclick="open_image(); current_image(3);">
-                <img id="whitney" class="imageDogs" class="front_page_images" src="../img/whitney.jpg" alt="" onclick="open_image(); current_image(4);">
-                <h3 class="dogsText">Goldie</h3>
-                <h3 class="dogsText">Ariana</h3>
-                <h3 class="dogsText">Whitney</h3>
-                <h4 class="dogsText">Trygg, rolig og tålmodig. Les mer om Goldie <a href="ourDogsParent.html?goldie"><strong>her</strong></a>.</h4>
-                <h4 class="dogsText">Livlig og nysgjerrig. Valper forventes i februar 2019. Les mer om Arianna <a href="ourDogsParent.html?ariana"><strong>her</strong></a>.</h4>
-                <h4 class="dogsText">Rolig, trygg og kjærlig. Les mer om lille Whitney <a href="ourDogsParent.html?whitney"><strong>her</strong></a>.</h4>
-        </div>
+    <div class="dogs">
+      <h2>Hils på hundene våre</h2>
+      <div class="row">
+          <div class="column">
+            <img id="goldie" class="imageDogs" src="../img/goldiePortrett.jpg" alt="" onclick="open_image(); current_image(2);">
+            <h3 class="dogsText">Goldie</h3>
+            <p class="dogsText">Trygg, rolig og tålmodig. Les mer om Goldie <a href="ourDogsParent.html?goldie"><strong>her</strong></a>.</p>
+          </div>
 
-        <div id="monochrome">
-            <img id="imageMonochrome" class="monochromeFloat" class="front_page_images" src="../img/monochrome.jpg" alt="">
-            <p class="monochromeParagraph" class="monochromeFloat">
-                Bichon Havanais er en liten, langhåret hund med robust kroppsbygning. Hundene er livlige, nysgjerrige og oppvakte – og har glimt i øyet. De er ofte veldig sosiale, og er kjent for å komme godt overens med barn. Rasen krever ikke så mye, men både kan og bør få lov til å bruke både kropp og hode jevnlig. Les mer om rasen Bichon Havanais her.</p>
-        </div>
+          <div class="column">
+            <img id="ariana" class="imageDogs" src="../img/arianaPortrett.jpg" alt="" onclick="open_image(); current_image(3);">
+            <h3 class="dogsText">Ariana</h3>
+            <p class="dogsText">Livlig og nysgjerrig. Valper forventes i februar 2019. Les mer om Arianna <a href="ourDogsParent.html?ariana"><strong>her</strong></a>.</p>
+          </div>
 
-        <div id="contactContainer">
-            <img id="imageClient" class="front_page_images" src="../img/contact_photo.jpg" alt="">
-            <h5 class="client">Kontakt Oss</h5>
-                <p class="client"> Vil du vite mer om Teigestova og hundene våre? Vi hører gjerne fra deg.<br>
-                    <br>
-                    E-post: <a href="mailto:birgitte.heggstad@mimer.no"> birgitte.heggstad@mimer.no </a> <br>
-                    <br>
-                    Tlf: 41761492 <br>
-                    <br>
-                    Adresse: <br>
-                    Teigestova Kennel v/ Birgitte Heggstad <br>
-                    Breivikveien 133, Ålesund <br>
-                </p>
-        </div>
+          <div class="column">
+            <img id="whitney" class="imageDogs" src="../img/whitneyPortrett.jpg" alt="" onclick="open_image(); current_image(4);">
+            <h3 class="dogsText">Whitney</h3>
+            <p class="dogsText">Rolig, trygg og kjærlig. Les mer om lille Whitney <a href="ourDogsParent.html?whitney"><strong>her</strong></a>.</p>
+          </div>
+      </div>
+    </div>
+
+    <div id="monochrome">
+      <img id="imageMonochrome" src="../img/monochrome.jpg" alt="Svarthvitt bilde av Goldie.">
+      <p class="monochromeParagraph">
+          Bichon Havanais er en liten, langhåret hund med robust kroppsbygning. Hundene er livlige, nysgjerrige og oppvakte – og har glimt i øyet.
+          De er ofte veldig sosiale, og er kjent for å komme godt overens med barn.
+          Rasen krever ikke så mye, men både kan og bør få lov til å bruke både kropp og
+          hode jevnlig. Les mer om rasen Bichon Havanais her.
+      </p>
+    </div>
+
+    <div id="contactContainer">
+      <img id="imageClient" src="../img/contactPicture.jpg" alt="">
+      <h2 class="client">Kontakt oss</h2>
+        <p class="client">Vil du vite mer om Teigestova og hundene våre?
+        <br>Vi hører gjerne fra deg. <br><br>
+        E-post: <a href="mailto:birgitte.heggstad@mimer.no"> birgitte.heggstad@mimer.no </a><br><br>
+        Tlf: 41761492 <br><br>
+        Adresse: <br>
+        Teigestova Kennel v/ Birgitte Heggstad <br>
+        Breivikveien 133, Ålesund <br>
+      </p>
+     </div>
+
 
 <!-- This section is used together with style13.css and imageView.js to create the image viewer when clicking on images. -->
     <!--  This div element contains the lightbox container together with all the buttons and a new full size image of every picture

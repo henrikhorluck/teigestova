@@ -233,10 +233,6 @@ nav li ul li {
 * === KONTAKT OSS-CSS ===
 */
 
-#contactIntro {
-  text-align: center;
-}
-
 #contact_client_square {
   float: right;
   margin-right: 20px;
@@ -827,4 +823,12 @@ z-index priority) and disables scrolling.  */
 
 .ourDogs_pictures {
   width: 20%;
+}
+
+#content, .mainContent {
+  text-align: justify;
+  position: relative;
+  width: 60%;
+  left: 20%;
+  right: 20%;
 }

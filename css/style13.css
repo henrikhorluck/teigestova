@@ -820,3 +820,11 @@ z-index priority) and disables scrolling.  */
 #whitneyLightbox:hover {
   border-color: rgb(146, 111, 81)
 }
+
+#coverphoto {
+  width: 100%;
+}
+
+.ourDogs_pictures {
+  width: 20%;
+}

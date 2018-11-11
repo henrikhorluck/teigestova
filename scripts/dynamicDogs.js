@@ -1,7 +1,7 @@
-let dog_text = document.getElementById('ourDogsParentText')
-let pic_goldie = document.getElementById('ourDogsParent_Goldie')
-let pic_ariana = document.getElementById('ourDogsParent_Ariana')
-let pic_whitney = document.getElementById('ourDogsParent_Whitney')
+const dog_text = document.getElementById('ourDogsParentText')
+const pic_goldie = document.getElementById('ourDogsParent_Goldie')
+const pic_ariana = document.getElementById('ourDogsParent_Ariana')
+const pic_whitney = document.getElementById('ourDogsParent_Whitney')
 
 // Eventlisteners for the pictures, and functions that add the text to the document
 pic_goldie.addEventListener('click', goldie_text)

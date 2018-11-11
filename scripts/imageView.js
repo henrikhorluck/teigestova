@@ -5,10 +5,11 @@ var image_viewer = document.getElementById('imageView');
 
 /* Creates elements containing the full image through a loop */
 const image_gallery = [
-    "../img/velkommen_full.jpg",
-    "../img/goldie_full.jpg",
-    "../img/ariana_full.jpg",
     "../img/whitney_full.jpg",
+    "../img/whitney_full2.jpg",
+    "../img/whitney_full3.jpg",
+    "../img/whitney_full4.jpg",
+    "../img/whitney_full5.jpg",
 ]
 
 for (var j = 0; j < image_gallery.length; j++) {
@@ -19,7 +20,7 @@ for (var j = 0; j < image_gallery.length; j++) {
     var imgElement = document.createElement('img');
     imgElement.className = 'full_image';
     imgElement.setAttribute('src', image_gallery[j]);
-    imgElement.setAttribute('style', 'height: 100%; display: block; margin: auto;');
+    imgElement.setAttribute('style', 'max-height: 52em; display: block; margin: auto;');
     divElement.appendChild(imgElement);
     divContainer.appendChild(divElement);
     image_viewer.appendChild(divContainer);
@@ -58,7 +59,7 @@ than the one which is currently the 'images' value. [images-1] is necessary sinc
 and the loop starts at 0. */
 function full_image (n) {
     var full_size = document.getElementsByClassName('fullSizeImage')
-    if(images <= 0) {    //Må få n til å ikke kunne bli større/mindre
+    if(images <= 0) {
         images = 1
         return
     }

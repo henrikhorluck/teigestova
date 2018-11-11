@@ -493,7 +493,6 @@ a:hover {
 #imageWelcome {
   object-fit: cover;
   width: 50%;
-  height: 100%;
   position: relative;
   float: left;
   border-bottom-right-radius: 5%;
@@ -637,7 +636,6 @@ a:hover {
   
   #monochrome {
     margin-top: 20%;
-    max-height: 100%;
   }
   
   .monochromeParagraph {

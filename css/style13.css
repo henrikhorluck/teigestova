@@ -467,12 +467,9 @@ a:hover {
 
 #imageHeader {
   width: 100%;
-  height: 100%;
   margin: 0;
-  /*display: block;*/
   position: relative;
-  top: 0;
-  left: 0;
+  bottom: 20%;
   border-bottom-right-radius: 1%;
 }
 
@@ -501,7 +498,7 @@ a:hover {
 
 #imageWelcome {
   object-fit: cover;
-  max-width: 50%;
+  width: 50%;
   height: 100%;
   position: relative;
   float: left;
@@ -513,6 +510,7 @@ a:hover {
   width: 100%;
   height: 80%;
   padding-top: 5%;
+  margin-top: 10%;
 }
 
 .dogsText {
@@ -538,10 +536,13 @@ a:hover {
   margin: 0% 5%;
   position: relative;
   top: 5%;
-  float: left;
   border-style: double;
   border-color: black;
   border-radius: 5%;
+}
+
+#whitney {
+  height: 30em;
 }
 
 #monochrome {
@@ -559,9 +560,10 @@ a:hover {
 }
 
 #imageMonochrome {
+  position: relative;
+  float: right;
   object-fit: cover;
   max-width: 50%;
-  height: 100%;
   margin: 0;
   position: relative;
   border-top-left-radius: 5%;
@@ -585,11 +587,11 @@ a:hover {
 }
 
 #imageClient {
-  max-width: 25%;
-  max-height: 65%;
+  max-width: 20%;
+  max-height: 50%;
   position: relative;
   left: 15%;
-  top: 5em;
+  top: 10em;
   border-radius: 5%;
 }
 
@@ -650,7 +652,7 @@ a:hover {
   }
   
   #imageMonochrome {
-    height: 25%;
+    width: 50%;
     margin: 5% 25% 0% 25%;
     border-radius: 5%;
   }
@@ -757,11 +759,6 @@ z-index priority) and disables scrolling.  */
   left: 10px;
 }
 
-/* Under begynner jeg med en class som inneholder korrekte displays for fullsizeimage */
-.fullSizeImage {
-  display: block;
-}
-
 @media only screen and (max-width: 900px) {
   #imageHeader {
     height: 50%;
@@ -806,4 +803,18 @@ z-index priority) and disables scrolling.  */
 
 #ourDogsParentText {
   margin: 5%;
+}
+
+#whitneyLightbox {
+  position: relative;
+  left: 25%;
+  margin-top: 2%;
+  margin-bottom: 3%;
+  border-style: double;
+  border-radius: 5%;
+  border-width: 4px;
+}
+
+#whitneyLightbox:hover {
+  border-color: rgb(146, 111, 81)
 }

@@ -679,10 +679,6 @@ a:hover {
     top: 0;
     margin-top: 10px;
   }
-
-   {
-    height: inherit;
-  }
 }
 
 /* The CSS below is necessary for the image viewer, basically it only triggers when the user presses a button and the imageView.js script is running*/

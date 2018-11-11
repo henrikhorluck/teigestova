@@ -405,39 +405,37 @@ a:hover {
   margin-left: 2%;
 }
 
-@media (max-width: 1000px) {
-  #tekstAct {
-    width: 90%;
-    left: 5%;
-    right: 5%;
-  }
-  #shows img {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    width: 100%;
-  }
-  #shows p {
-    width: 100%;
-  }
-  #awards img {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    width: 100%;
-  }
-  #awards p {
-    width: 100%;
-  }
-  #agility img {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    width: 100%;
-  }
-  #agility p {
-    width: 100%;
-  }
+#tekstAct {
+  width: 90%;
+  left: 5%;
+  right: 5%;
+}
+#shows img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 100%;
+}
+#shows p {
+  width: 100%;
+}
+#awards img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 100%;
+}
+#awards p {
+  width: 100%;
+}
+#agility img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 100%;
+}
+#agility p {
+  width: 100%;
 }
 
 @media (max-width: 1000px) {
@@ -446,7 +444,6 @@ a:hover {
     left: 10%;
     right: 10%;
   }
-}
 /*
 ===== END OF SIMEN PAGES CSS ======
 */

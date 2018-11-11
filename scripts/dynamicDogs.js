@@ -1,6 +1,6 @@
 const dog_text = document.getElementById('ourDogsParentText')
 const pic_goldie = document.getElementById('ourDogsParent_Goldie')
-const pic_ariana = document.getElementById('ourDogsParent_Ariana')
+const pic_arianna = document.getElementById('ourDogsParent_Arianna')
 const pic_whitney = document.getElementById('ourDogsParent_Whitney')
 
 // Eventlisteners for the pictures, and functions that add the text to the document
@@ -26,8 +26,8 @@ function goldie_text() {
     dronning og har utmerket kontakt med den som går med henne.<p>`
 }
 
-pic_ariana.addEventListener('click', ariana_text)
-function ariana_text() {
+pic_arianna.addEventListener('click', arianna_text)
+function arianna_text() {
     dog_text.innerHTML = `<h2>Arianna</h2>
     <ul>
         <li>Født 31/12-16</li>
@@ -83,8 +83,8 @@ function whitney_text() {
 //This makes so that if you add ?goldie, ?ariana, or ?whitney it will load that part automatically on the site
 if (window.location.search.indexOf('goldie') > -1) {
     goldie_text()
-} else if (window.location.search.indexOf('ariana') > -1){
-    ariana_text()
+} else if (window.location.search.indexOf('arianna') > -1){
+    arianna_text()
 } else if ((window.location.search.indexOf('whitney') > -1)){
     whitney_text()
 }

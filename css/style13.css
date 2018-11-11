@@ -1,41 +1,86 @@
+/*
+----------------------------------
+BODY
+----------------------------------
+*/
+
 html, body {
   position: relative;
   overflow-x: hidden;
-  /*background-image: linear-gradient(to right, #C4C5BA 50%, #926F51 50%); hadde vært kult å kjøre 50/50 med dette*/
 }
 
 body {
-  background-color: #C4C5BA;
-  font-family: "Roboto", sans-serif; /*denne fonten må lastes ned og testes!!!*/
-  font-size: 1em;
+  background-color: #E0DADA;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15pt;
   font-weight: normal;
-  color: #0B1014;
+  color: #000000;
   margin: 0 auto;
+  display: flex;
   min-height: 100vh;
   flex-direction: column;
-  justify-content: space-between
+  justify-content: space-between;
 }
 
-div {
-  line-height: 150%;
-}
-
-p {
-  margin-top: 0.5em;
+.headerContainer {
+  position: relative;
+  top: 0;
+  left: 0;
 }
 
 header {
   margin-bottom: 4.2em;
 }
 
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-wight: normal;
+  font-size: 46pt;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  font-size: 30pt;
+}
+
+h3 {
+  font-family: 'Playfair Display', serif;
+  font-weight: normal;
+  font-size: 26pt;
+}
+
+a {
+  color: #000000;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+p {
+  line-height: 2em;
+}
 /*
-* === NAVIGATION CSS ===
+----------------------------------
+END OF BODY
+----------------------------------
+*/
+
+
+
+/*
+----------------------------------
+NAVIGATION BAR
+----------------------------------
 */
 
 nav {
   text-align: center;
   z-index : 3;
-  background-color: #E0E0E0;
+  position: relative;
+  background-color: #CCC7C7;
+  font-size: 20pt;
+  color: #484646;
 }
 
 nav ul {
@@ -50,26 +95,27 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #292929;
+    font-weight: 300;
+    color: #484646;
     text-transform: uppercase;
     text-decoration: none;
-    padding: 20px;
+    padding: 15px;
     display: block;
-    font-weight: 100;
 }
 
 nav ul li:hover {
-    background-color: lightgrey;
+  font-weight: bold;
 }
 
 nav ul ul {
+  position: absolute;
   min-width: 200px;
-  background: lightgrey;
+  background: #CCC7C7;
+  display: none;
 }
 
 nav ul ul li {
   display: block;
-  background: grey;
 }
 
 nav ul li i {
@@ -79,30 +125,11 @@ nav ul li i {
 }
 
 nav div {
-  background: lightgrey;
-  color: #292929;
-  font-size: 24px;
   padding: 0.3em;
   cursor: pointer;
   display: none;
 }
 
-nav li ul {
-  position:absolute;
-}
-nav li ul li {
-  overflow:hidden;
-  height:0;
-  -webkit-transition:height 200ms ease-in;
-  -moz-transition:height 200ms ease-in;
-  -o-transition:height 200ms ease-in;
-  transition:height 200ms ease-in;
-}
-@media(min-width: 761px) {
-  nav ul > li:hover ul li {
-    height: 50px;
-  }
-}
 /* Creating a nav for smaller screens than 768px*/
 @media(max-width: 760px) {
   nav div {
@@ -124,17 +151,30 @@ nav li ul li {
   }
 }
 
+@media(min-width: 761px) {
+  #hunder:hover #under_hunder {
+    display: block;
+  }
+}
+
 /*
-* === END OF NAVIGATION CSS ===
+----------------------------------
+END OF NAVIGATION BAR
+----------------------------------
 */
 
 
-/* === START OF FOOTER CSS === */
 
-/* the <footer> */
+
+/*
+----------------------------------
+FOOTER
+----------------------------------
+*/
+
 #paw {
-  background-color: darkgray; /* This should probably be replaced by some form of 
-  `background-image: url("example.jpg");` see https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Backgrounds_and_Borders for more info*/
+  background-color: #538C6D;
+  color: #FFFFFF;
   overflow: auto;
   width: 100%;
   display: flex;
@@ -145,40 +185,259 @@ nav li ul li {
 }
 
 .footerInfo {
-  padding-right: 2em;
-  padding-left: 2em;
+  padding-right: 8%;
+  padding-left: 8%;
   display: inline-block;
 }
 
 #pawLogo {
   height: 8em;
   display: inline-block;
+  opacity: 0.8;
 }
 
-/* === END OF FOOTER CSS === */
+#paw a {
+  color: #FFFFFF;
+}
+
+#paw li {
+  list-style-type: none;
+}
+
 
 /*
-* === OM OSS-CSS ===
+----------------------------------
+END OF FOOTER
+----------------------------------
 */
 
-.kollasje {
+
+
+
+/*
+----------------------------------
+HOME
+----------------------------------
+*/
+
+
+#start {
   position: relative;
-  margin-top: 60px;
+  top: 0;
+  left: 0;
+  background-color: #CCC7C7;
+}
+
+#imageHeader {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  /*display: block;*/
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.logo {
+  position: absolute;
+  top: 8em;
+  z-index: 1;
+  left: 40%;
+  opacity: 0.9;
+}
+
+
+#imageWelcome {
+  width: 55%;
+  height: 100%;
+  margin: 0;
+  position: relative;
+  border: transparent;
+  float: left;
+}
+
+.intro {
+  position: relative;
+  left: 0;
+  margin: 0;
+  line-height: 2em;
+}
+
+h2.intro {
+  margin: 5% 10% 5% 0;
+}
+
+p.intro {
+  margin-right: 12%;
+}
+
+
+.dogs {
+  position: relative;
+  width: 100%;
+  height: 80%;
+  padding-top: 3%;
+  margin-bottom: 10%;
+}
+
+.dogs > h2 {
+  position: relative;
+  text-align: center;
+  margin: 5%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  margin: 0 auto;
+}
+
+.imageDogs {
+  position: relative;
+  object-fit: cover;
+  max-width: 75%;
+  display: block;
+  margin: auto;
+}
+
+.dogsText {
+  text-align: center;
+  width: 100%;
+  margin: 1% 5%;
+  position: relative;
+  top: 5%;
+  float: left;
+}
+
+p.dogsText{
+  text-align: left;
+  display: block;
+  margin-left: 12%;
+  max-width: 35ch;
+}
+
+
+#monochrome {
+  max-width: 100%;
+  position: relative;
+  margin-top: 5%;
+  color: white;
+}
+
+#imageMonochrome {
+  height: 100%;
+  margin: 0;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.monochromeParagraph {
+   position: absolute;
+   top: 30%;
+   left: 6%;
+   max-width: 32%;
+   line-height: 1.7em;
+   font-size: 17pt;
+}
+
+
+#contactContainer {
+  margin-top: 5%;
+}
+
+#imageClient {
+  max-width: 30%;
+  max-height: 70%;
+  position: relative;
+  left: 15%;
+  top: 5em;
+}
+
+.client {
+  position: relative;
+  left: 50%;
+  bottom: 12em;
+  font-size: 17pt;
+  line-height: 1.4em;
+  width: 40%;
+  color: black;
+}
+
+
+
+/*
+----------------------------------
+END OF HOME
+----------------------------------
+*/
+
+
+
+/*
+----------------------------------
+ABOUT US
+----------------------------------
+*/
+
+#imageAbout {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  /*display: block;*/
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+#logoAbout {
+  position: absolute;
+  top: 5em;
+  z-index: 1;
+  left: 40%;
+  opacity: 0.9;
+}
+
+.introOmOss {
+  position: relative;
+  margin: 5% 10% 10% 10%;
+}
+
+.introOmOss h2 {
+  text-align: center;
+}
+
+.introOmOss p {
+    line-height: 2em;
+    max-width: 80ch;
+    margin: 0 auto;
+}
+
+
+.collage {
+  position: relative;
+  margin-top: 30px;
   height: 550px;
-  margin-bottom: 50px;
-  display: flex;
+  width: 90%;
 }
 
 #sitatOmoss {
   position: absolute;
   font-family: "Playfair Display";
-  font-size: 1.5em;
+  font-size: 1.3em;
   line-height: 2.3em;
   margin-top: 40px;
-  left: 15%;
+  margin-left: 20px;
+  right: 50%;
   width: 290px;
   height: 290px;
-  padding: 50px;
+  padding: 40px;
   border: none;
   color: white;
   text-align: left;
@@ -202,102 +461,138 @@ nav li ul li {
   margin-left: 20px;
 }
 
+
 .sideordnet {
   width: 100%;
-  margin-top: 50px;
-}
-
-.left-half, .right-half {
-  display: inline-block;
-  width: 50%;
-  margin: auto;
-  vertical-align: top;
-  position: relative;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 #omoss_client_with_dog {
-  float: right;
-  margin-right: 20px;
-  margin-top: 10px;
-  width: 400px;
+  width: 40%;
+  height: 80%;
+  margin: 0;
+  position: relative;
+  float: left;
 }
 
 #clientTextbox {
-  position: absolute;
-  width: 400px;
-  margin-left: 20px;
+  margin: 10% 10% 0 5%;
+  position: relative;
+  left: 5%;
+  line-height: 2em;
+}
+
+
+/* CSS for smaller screens than 761px*/
+@media(max-width: 761px) {
+  #omoss_dog_face {
+    display: none;
+  }
+
+  #sitatOmoss {
+    position: absolute;
+    font-size: 1em;
+    line-height: 1.9em;
+    margin-left: auto;
+    margin-top: 0px;
+    width: 180px;
+    height: 200px;
+    padding: 30px;
+  }
+
+  #omoss_dog_prizes {
+    position: absolute;
+    left: 30%;
+    margin-right: 20px;
+    width: 200px;
+    height: 200px;
+    margin-top: 190px;
+    margin-left: 20px;
+  }
 }
 
 /*
-* === KONTAKT OSS-CSS ===
+----------------------------------
+END OF ABOUT US
+----------------------------------
 */
 
-#contactIntro {
+
+
+/*
+----------------------------------
+OUR DOGS
+----------------------------------
+*/
+
+#ourDogsText h2 {
   text-align: center;
+  margin: 10%;
 }
 
-#contact_client_square {
-  float: right;
-  margin-right: 20px;
-  border-radius: 50%;
-  width: 200px;
+#ourDogsText {
+  min-width: 65ch;
+  max-width: 85ch;
+  margin: auto;
+  line-height: 150%;
+  text-align: left;
 }
 
-#contactForm {
+.box {
+  background-color: #EEEEEE;
+  width: 1220px;
+  height: 500px;
+  margin: 1% 0 6% 0;
+  padding: 3%;
+}
+
+.dogs {
+  margin: 5% 0 8% 0;
+}
+
+.leftBoxText {
+  margin-left: 8%;
+}
+
+.box li {
+  list-style-type: none;
+}
+#leftBox {
+  width: 80%;
   float: left;
-  margin-left: 20px;
 }
 
-input[type=text], input[type=tel], textarea {
-  width: 210px;
-  padding: 2px 2px;
+#rightBox {
+  width: 80%;
+  float: right;
 }
 
-textarea {
-  height: 100px;
-  border: 1px solid #ccc;
-  resize: none;
+#goldie {
+  float: left;
+  max-height: 400px;
+  margin: 4% 8% 0 8%;
 }
 
-/* === START OF FOOTER CSS === */
-
-/* the <footer> */
-#paw {
-  background-color: darkgray; /* This should probably be replaced by some form of 
-  `background-image: url("example.jpg");` see https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Backgrounds_and_Borders for more info*/
-  overflow: auto;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1em;
-  font-size: 0.8em;
+#ariana {
+  float: right;
+  max-height: 400px;
+  margin: 4% 8% 0 8%;
 }
 
-.footerInfo {
-  padding-right: 2em;
-  padding-left: 2em;
-  display: inline-block;
+#whitney {
+  float: left;
+  max-height: 400px;
+  margin: 4% 8% 0 4%;
 }
 
-#pawLogo {
-  height: 8em;
-  display: inline-block;
+.leftBoxText {
+  margin-left: 8%;
+  display: inline;
 }
 
-/* === END OF FOOTER CSS === */
 
-a {
-  color:#0B1014;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-a:hover {
-  background-color: #2F80ED;
-}
-
- /* 
+ /*
  ===== START OF SIMEN PAGES CSS =====
  */
  .tekstBic {
@@ -454,235 +749,25 @@ a:hover {
 ===== END OF SIMEN PAGES CSS ======
 */
 
+
+
 /*
-====  START of teigestova.html ===
+----------------------------------
+IMAGE VIEWER
+----------------------------------
 */
 
-#start {
-  position: relative;
-  top: 0;
-  left: 0;
-}
 
-#imageHeader {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  /*display: block;*/
-  position: relative;
-  top: 0;
-  left: 0;
-  border-bottom-right-radius: 1%;
-}
+/* The CSS below is necessary for the image viewer, basically it only triggers when
+the user presses a button and the imageView.js script is running*/
 
-#logo {
-  position: absolute;
-  top: 8em;
-  z-index: 1;
-  left: 35%;
-}
-
-.intro {
-  position: relative;
-  left: 5%;
-  top: 15%;
-  margin: 0;
-  margin-left: 48%;
-  margin-right: 10%;
-  line-height: 2em;
-  font-size: 1.5em;
-  text-align: center;
-}
-
-#introContainer {
-  height: 100%;
-}
-
-#imageWelcome {
-  object-fit: cover;
-  max-width: 50%;
-  height: 100%;
-  position: relative;
-  float: left;
-  border-bottom-right-radius: 5%;
-}
-
-.dogs {
-  position: relative;
-  width: 100%;
-  height: 80%;
-  padding-top: 5%;
-}
-
-.dogsText {
-  text-align: center;
-  max-width: 25%;
-  margin: 1% 5%;
-  position: relative;
-  top: 5%;
-  float: left;
-  width: 23%;
-}
-
-.dogs > h2 {
-  position: relative;
-  top: 5%;
-  text-align: center;
-}
-
-.imageDogs {
-  object-fit: cover;
-  width: 22%;
-  height: 50%;
-  margin: 0% 5%;
-  position: relative;
-  top: 5%;
-  float: left;
-  border-style: double;
-  border-color: black;
-  border-radius: 5%;
-}
-
-#monochrome {
-  max-width: 100%;
-}
-
-.monochromeParagraph {
-  position: relative;
-  margin: 5% 5% 0 5%;
-  float: left;
-  max-width: 40%;
-  text-align: left;
-  line-height: 1.5em;
-  font-size: 1.5em;
-}
-
-#imageMonochrome {
-  object-fit: cover;
-  max-width: 50%;
-  height: 100%;
-  margin: 0;
-  position: relative;
-  border-top-left-radius: 5%;
-  border-bottom-left-radius: 5%;
-}
-
-#contactContainer {
-  height: 75%;
-}
-
-.client {
-  position: relative;
-  left: 50%;
-  bottom: 15em;
-  font-size: 1.5em;
-  line-height: 1.1em;
-  width: 30%;
-  color: black;
-  line-height: 1.5em;
-  font-size: 16px;
-}
-
-#imageClient {
-  max-width: 25%;
-  max-height: 65%;
-  position: relative;
-  left: 15%;
-  top: 5em;
-  border-radius: 5%;
-}
-
-@media only screen and (max-width: 900px) {
-  #imageHeader {
-    height: 50%;
-  }
-  
-  #logo {
-    height: 5%;
-  }
-  
-  .intro {
-    font-size: 12px;
-    max-width: 100%;
-    margin-left: 0;
-
-  }
-  
-  #introContainer {
-    height: 50%;
-  }
-  
-  #imageWelcome {
-    max-height: 50%;
-    max-width: 100%;
-    margin: 5% 25% 0% 25%;
-    border-radius: 5%;
-  }
-  
-  .dogs {
-    height: 50%;
-    margin-top: 25%;
-  }
-  
-  .dogsText {
-    font-size: 11px;
-  }
-  
-  .dogs > h2 {
-    font-size: 14px; 
-  }
-  
-  .imageDogs {
-    max-height: 40%;
-    margin: 5% 2%;
-    left: 7%;
-  }
-  
-  #monochrome {
-    margin-top: 20%;
-    max-height: 100%;
-  }
-  
-  .monochromeParagraph {
-    font-size: 12px;
-    max-width: 100%;
-  }
-  
-  #imageMonochrome {
-    height: 25%;
-    margin: 5% 25% 0% 25%;
-    border-radius: 5%;
-  }
-  
-  #contactContainer {
-    height: 50%;
-    width: 75%;
-    top: 1em;
-  }
-  
-  .client {
-    font-size: 14px;
-    margin-top: 5%;
-    width: 100%;
-    font-size: 10px;
-    bottom: 0;
-    left: 10%;
-  }
-  
-  #imageClient {
-    position: relative;
-    border-radius: 5%;
-    left: 50%;
-    top: 0;
-    margin-top: 10px;
-  }
-}
-
-/* The CSS below is necessary for the image viewer, basically it only triggers when the user presses a button and the imageView.js script is running*/
-
-/* The imageViewer class is used on the div element conatining image which should not be displayed unless the user clicks on a picture,
-thereby calling the function which changes the styling to display the imageViewer div element. This styling turns the background black (due to higher
+/* The imageViewer class is used on the div element conatining image which should
+not be displayed unless the user clicks on a picture,
+thereby calling the function which changes the styling to display the imageViewer
+div element. This styling turns the background black (due to higher
 z-index priority) and disables scrolling.  */
+
+
 .imageViewer {
   display: none;
   position: fixed;
@@ -706,11 +791,9 @@ z-index priority) and disables scrolling.  */
 }
 
 /* Styles the 'X' button used to close the viewer. */
-
 .closeViewer {
   position: absolute;
-  top: 10%;
-  right: 10%;
+  top: 10px;
   right: 25px;
   font-size: 35px;
   font-weight: bold;
@@ -725,13 +808,11 @@ z-index priority) and disables scrolling.  */
 }
 
 /*The following function disables the display of all the full sized images (by class tag).*/
-
 .fullSizeImage {
   display: none;
 }
 
 /* Styles the 'previous image' and 'next image' buttons. */
-
 .nextImage, .previousImage {
   cursor: pointer;
   position: absolute;
@@ -749,14 +830,14 @@ z-index priority) and disables scrolling.  */
 }
 
 .nextImage {
-  right: 10px;
+  right: 0;
 }
 
 .previousImage {
-  left: 10px;
+  left: 0;
 }
 
-/* Under begynner jeg med en class som inneholder korrekte displays for fullsizeimage */
+/* Class for correct displays of fullsize images. */
 .fullSizeImage {
   display: block;
 }
@@ -765,20 +846,18 @@ z-index priority) and disables scrolling.  */
   #imageHeader {
     height: 50%;
   }
-  
+
   #logo {
     height: 5%;
   }
-  
-  .intro {
-    font-size: 12px;
-    max-width: 100%;
-    margin-left: 0;
-  }
-}
 
 #headertry {
   width: 100%;
+}
+
+#contactContainer {
+  height: 90%;
+  width: 75%;
 }
 
 .sticky {
@@ -793,16 +872,9 @@ z-index priority) and disables scrolling.  */
   border-style: none;
 }
 
-.ourDogsParentImg {
-  max-height: 100%;
-}
 
-.ourDogsParent_div {
-  display: inline-block;
-  height: 200px;
-  margin: 0 2.5%;
-}
-
-#ourDogsParentText {
-  margin: 5%;
-}
+/*
+----------------------------------
+END OF IMAGE VIEWER
+----------------------------------
+*/

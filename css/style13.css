@@ -11,7 +11,6 @@ body {
   font-weight: normal;
   color: #0B1014;
   margin: 0 auto;
-  display: flex;
   min-height: 100vh;
   flex-direction: column;
   justify-content: space-between
@@ -792,4 +791,18 @@ z-index priority) and disables scrolling.  */
 #just_blocking {
   height: 0px;
   border-style: none;
+}
+
+.ourDogsParentImg {
+  max-height: 100%;
+}
+
+.ourDogsParent_div {
+  display: inline-block;
+  height: 200px;
+  margin: 0 2.5%;
+}
+
+#ourDogsParentText {
+  margin: 5%;
 }

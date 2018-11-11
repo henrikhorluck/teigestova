@@ -36,6 +36,7 @@ nav {
   text-align: center;
   z-index : 3;
   background-color: #E0E0E0;
+  position: relative;
 }
 
 nav ul {

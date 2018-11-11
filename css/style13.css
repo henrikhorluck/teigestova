@@ -623,7 +623,7 @@ a:hover {
   }
   
   .dogs {
-    height: 50%;
+    height: 15em;
     margin-top: 25%;
   }
   
@@ -678,6 +678,10 @@ a:hover {
     left: 50%;
     top: 0;
     margin-top: 10px;
+  }
+
+   {
+    height: inherit;
   }
 }
 
@@ -773,6 +777,8 @@ z-index priority) and disables scrolling.  */
     max-width: 100%;
     margin-left: 0;
   }
+
+  
 }
 
 #headertry {

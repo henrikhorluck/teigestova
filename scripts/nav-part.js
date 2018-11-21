@@ -12,11 +12,7 @@ navigation_bar.innerHTML = `<div id="navbar">
         <li id="hunder"><a id="ourDogs_link" href="#">Våre hunder<i class="fas fa-angle-down"></i></a>
               <ul>
                     <li class="under_hunder"><a href="ourDogs.html?goldie">Goldie</a></li>
-<<<<<<< HEAD
                     <li class="under_hunder"><a href="ourDogs.html?arianna">Arianna</a></li>
-=======
-                    <li class="under_hunder"><a href="ourDogs.html?ariana">Ariana</a></li>
->>>>>>> d91d7bef971dbc0c4a953497ceb65bc52ddf09f3
                     <li class="under_hunder"><a href="ourDogs.html?whitney">Whitney</a></li>
                     <li class="under_hunder"><a href="ourDogsPuppies.html">Valper</a></li>
                     <li class="under_hunder"><a href="ourDogsActivities.html">Aktiviteter</a></li>

@@ -6,7 +6,7 @@ var sticky = navbar.offsetTop;
 function scroll() {
   //hvis man har scrollet lenger enn navbar er fra toppen
   if (window.pageYOffset >= sticky) {
-    just_blocking.style.height = "60px";
+    just_blocking.style.height = "73px";
     navbar.classList.add("sticky") //legger til class="sticky" i html
     //.sticky er allerede lagt til i CSS filen.
   }

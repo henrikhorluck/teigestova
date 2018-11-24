@@ -9,7 +9,7 @@ navigation_bar.innerHTML = `<div id="navbar">
     <ul id="dropdown">
         <li><a href="teigestova.html">Hjem</a></li>
         <li><a href="about.html">Om oss</a></li>
-        <li id="hunder"><a id="ourDogs_link" href="#">Våre hunder<i class="fas fa-angle-down"></i></a>
+        <li id="hunder"><a id="ourDogs_link" href="#">Våre hunder ▾</a>
               <ul>
                     <li class="under_hunder"><a href="ourDogsParent.html?goldie">Goldie</a></li>
                     <li class="under_hunder"><a href="ourDogsParent.html?ariana">Ariana</a></li>
@@ -56,7 +56,7 @@ function openOurDogs() {
 window.addEventListener('resize', update_navbar)
 function update_navbar(){
   var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-  if (w > 760){
+  if (w > 940){
     // So you can't open the navbar on large screen
     document.getElementById('navbar').removeEventListener('click', open_dropdown)
     // so you can't click to open the sub-menu whe the screen is wide
@@ -66,7 +66,7 @@ function update_navbar(){
     ourDogs_link.setAttribute('href', 'ourDogs.html')
     // opens the mobile menu
     dropdown.style.display = "block";
-  } else if (w <= 760){
+  } else if (w <= 940){
     // opening navbar
     document.getElementById('navbar').addEventListener('click', open_dropdown)
     // can open the sub-menu, and the click on the same button again, also doesn't reload page
@@ -74,8 +74,8 @@ function update_navbar(){
     // closes the mobile-menu
     dropdown.style.display = "none"
   }
-  // resets the closd sub-menu
-  if (under_hunder[0].style.height == '50px') {	
+  // resets the closed sub-menu
+  if (under_hunder[0].style.height == '60px') {	
     for (let i = 0; i < under_hunder.length; i++) {
       under_hunder[i].style.height = "0";  
     }

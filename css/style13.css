@@ -712,6 +712,20 @@ OUR DOGS PARENT
   margin: 4% 8% 0 8%;
 }
 
+.ourDogsParentImg {
+  max-height: 100%;
+}
+
+.ourDogsParent_div {
+  display: inline-block;
+  height: 200px;
+  margin: 0 2.5%;
+}
+
+#ourDogsParentText {
+  margin: 5%;
+}
+
 #activitiesOne {
   width: 400px;
 }

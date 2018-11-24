@@ -576,11 +576,6 @@ OUR DOGS
 ----------------------------------
 */
 
-#ourDogsText h2 {
-  text-align: center;
-  margin: 10%;
-}
-
 #ourDogsText {
   min-width: 65ch;
   max-width: 85ch;

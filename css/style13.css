@@ -40,6 +40,7 @@ h1 {
   font-weight: normal;
   font-size: 46pt;
   text-transform: uppercase;
+  text-align: center;
 }
 
 h2 {
@@ -83,6 +84,7 @@ nav {
   position: relative;
   font-size: 20pt;
   color: #484646;
+  height: 73px;
 }
 
 nav ul {
@@ -575,11 +577,6 @@ END OF ABOUT US
 OUR DOGS
 ----------------------------------
 */
-
-#ourDogsText h2 {
-  text-align: center;
-  margin: 10%;
-}
 
 #ourDogsText {
   min-width: 65ch;

@@ -3,9 +3,8 @@
 var navigation_bar = document.getElementById('navigation_bar')
 
 navigation_bar.innerHTML = `<div id="navbar">
-        <i class="fas fa-bars"></i>
+        <div>≡</div>
   </div>
-
     <ul id="dropdown">
         <li><a href="teigestova.html">Hjem</a></li>
         <li><a href="about.html">Om oss</a></li>

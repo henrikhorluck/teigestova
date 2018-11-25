@@ -139,7 +139,7 @@ nav li ul li {
 }
 @media (min-width: 941px) {
   nav ul > li:hover ul li {
-    height: 60px;
+    height: 72px;
   }
 }
 /* Creating a nav for smaller screens than 768px*/
@@ -264,20 +264,6 @@ HOME
   float: right;
   width: 50%;
   height: 100%;
-  margin: 5%;
-}
-
-.dogs {
-  position: relative;
-  width: 100%;
-  height: 80%;
-  padding-top: 3%;
-  margin-bottom: 10%;
-}
-
-.dogs > h2 {
-  position: relative;
-  text-align: center;
   margin: 5%;
 }
 
@@ -579,70 +565,55 @@ OUR DOGS
 */
 
 #ourDogsText {
-  min-width: 65ch;
   max-width: 85ch;
-  margin: auto;
-  line-height: 150%;
+  margin: auto 5% 0 5%;
   text-align: left;
-  margin-bottom: 0;
 }
 
 .box {
   background-color: #eeeeee;
-  width: 1220px;
-  height: 500px;
-  margin: 1% 0 6% 0;
-  padding: 3%;
+  width: 80%;
+  height: auto;
+  margin: 5% auto 5% auto;
+  padding: 2%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .dogs {
-  margin-right: 8%;
+  height: 120%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.leftBoxText {
-  margin-left: 8%;
+.dogs > h2 {
+  position: relative;
+  text-align: center;
+  margin: 5%;
 }
 
 .box li {
   list-style-type: none;
 }
 
-#leftBox {
-  width: 80%;
-  float: left;
+.ourDogsImg {
+  width: 100%;
+  height: auto;
 }
 
-#leftBoxTwo {
-  width: 80%;
-  float: left;
+.dogImgDiv {
+  width: 95%;
+  margin: 2.5% 2.5% auto 2.5%
 }
 
-#rightBox {
-  width: 80%;
-  float: right;
-}
-
-#goldie {
-  float: left;
-  max-height: 400px;
-  margin: 4% 8% 0 8%;
-}
-
-#ariana {
-  float: right;
-  max-height: 400px;
-  margin: 4% 8% 0 8%;
-}
-
-#whitney {
-  float: left;
-  max-height: 400px;
-  margin: 4% 8% 0 4%;
-}
-
-.leftBoxText {
-  margin-left: 8%;
-  display: inline;
+@media (min-width: 940px) {
+  .dogs {
+    flex-direction: row;
+  }
+  .box {
+    width: 25%;
+  }
 }
 
 /*

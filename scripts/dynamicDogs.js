@@ -1,7 +1,7 @@
-const dog_text = document.getElementById("ourDogsParentText");
-const pic_goldie = document.getElementById("ourDogsParent_Goldie");
-const pic_arianna = document.getElementById("ourDogsParent_Arianna");
-const pic_whitney = document.getElementById("ourDogsParent_Whitney");
+const dog_text = document.getElementById("dynamic_text");
+const pic_goldie = document.getElementById("dynamic_goldie");
+const pic_arianna = document.getElementById("dynamic_arianna");
+const pic_whitney = document.getElementById("dynamic_whitney");
 
 const goldie_text = `<h2>Goldie</h2>
     <ul>

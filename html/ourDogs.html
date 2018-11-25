@@ -33,9 +33,13 @@
        </p>
     </div>
 
+    <section id="dynamic_text"></section>
+
     <div class="dogs">
-      <div class="box" id="leftBox">
-        <img id="goldie" src="../img/goldiePortrett.jpg" alt="Goldie">
+      <div class="box">
+        <div class="dogImgDiv">
+            <img id="dynamic_goldie" class="ourDogsImg" src="../img/goldiePortrett.jpg" alt="Goldie">
+        </div>
         <div class="boxText">
           <h3>Goldie</h3>
           <p>Goldie er dronninga i huset. Hun er veldig trygg og tålmodig i
@@ -48,9 +52,11 @@
         </div>
       </div>
 
-      <div class="box" id="rightBox">
-          <img id="ariana" src="../img/ariannaPortrett.jpg" alt="Arianna">
-          <div class="leftBoxText">
+      <div class="box">
+          <div class="dogImgDiv">
+          <img id="dynamic_arianna" class="ourDogsImg" src="../img/ariannaPortrett.jpg" alt="Arianna">
+          </div>
+          <div class="boxText">
             <h3>Arianna</h3>
             <p>Arianna er en snerten liten frøken med mye fart i. Hun er livlig og
               nysgjerrig, og lærer veldig fort.</p>
@@ -62,8 +68,10 @@
           </div>
       </div>
 
-      <div class="box" id="leftBoxTwo">
-        <img id="whitney" src="../img/whitneyPortrett.jpg" alt="Whitney">
+      <div class="box">
+        <div class="dogImgDiv">
+        <img id="dynamic_whitney" class="ourDogsImg" src="../img/whitneyPortrett.jpg" alt="Whitney">
+        </div>
         <div class="boxText">
           <h3>Whitney</h3>
           <p>Lille Whitney er familiens nyeste medlem. Hun er rolig, trygg,
@@ -76,27 +84,6 @@
         </div>
       </div>
     </div>
-  </div>
-  <div>
-      <h1>Hundene våre</h1>
-
-      <section id="ourDogsParentText"></section>
-
-      <p>Du kan lære mer om de andre hundene ved å trykke på bildene!</p>
-      <div class="ourDogsParent_div">
-          <img id="ourDogsParent_Goldie" class="ourDogsParentImg" src="../img/goldie.jpg" alt="A picture of Goldie, click on it to get to know more about her">
-          <p><strong>Goldie</strong></p>
-      </div>
-
-      <div class="ourDogsParent_div" id="ourDogsParent_Whitney_div" >
-          <img id="ourDogsParent_Whitney" class="ourDogsParentImg" src="../img/whitney.jpg" alt="A picture of Whitney, click on it to get to know more about her">
-          <p><strong>Whitney</strong></p>
-      </div>
-
-      <div class="ourDogsParent_div">
-          <img id="ourDogsParent_Arianna" class="ourDogsParentImg" src="../img/arianna.jpg" alt="A picture of Arianna, click on it to get to know more about her">
-          <p><strong>Arianna</strong></p>
-      </div>
   </div>
 
   <script src="../scripts/dynamicDogs.js"></script>

@@ -48,7 +48,7 @@ function ourDogs_badlink(){
 
 function openOurDogs() {
   for (let i = 0; i < under_hunder.length; i++) {
-      under_hunder[i].style.height = '50px';	
+      under_hunder[i].style.height = '72px';	
   }
 }
   

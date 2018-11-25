@@ -86,7 +86,7 @@ pic_whitney.addEventListener("click", function() {
   openDog(whitney_text, dog_text);
 });
 
-//This makes so that if you add ?goldie, ?ariana, or ?whitney it will load that part automatically on the site
+//This makes so that if you add ?goldie, ?arianna, or ?whitney it will load that part automatically on the site
 if (window.location.search.indexOf("goldie") > -1) {
   openDog(goldie_text, dog_text);
 } else if (window.location.search.indexOf("arianna") > -1) {

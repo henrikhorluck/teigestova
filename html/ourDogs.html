@@ -24,8 +24,8 @@
     <div id="ourDogsText">
       <h1>Våre hunder</h1>
 
-      <p>Her kan du lese mer om hundene ved Teigestova, <a href="ourDogsParent.html?goldie">Goldie</a>,
-        <a href="ourDogsParent.html?ariana">Ariana</a> og <a href="ourDogsParent.html?whitney">Whitney</a>,
+      <p>Her kan du lese mer om hundene ved Teigestova, <a href="ourDogs.html?goldie">Goldie</a>,
+        <a href="ourDogs.html?arianna">Arianna</a> og <a href="ourDogs.html?whitney">Whitney</a>,
         om <a href="ourDogsActivities.html">aktiviteter</a> vi er med på med hundene våre, og hvilke
         <a href="ourDogsPuppies.html">valpeplaner</a> vi har.  Alle våre tre, kjære bichon havanaiser
         har hver sin unike personlighet, men alle kjennetegnes av det som er typisk for rasen: de er
@@ -33,9 +33,13 @@
        </p>
     </div>
 
+    <section id="dynamic_text"></section>
+
     <div class="dogs">
-      <div class="box" id="leftBox">
-        <img id="goldie" src="../img/goldiePortrett.jpg" alt="Goldie">
+      <div class="box">
+        <div class="dogImgDiv">
+            <img id="dynamic_goldie" class="ourDogsImg" src="../img/goldiePortrett.jpg" alt="Goldie">
+        </div>
         <div class="boxText">
           <h3>Goldie</h3>
           <p>Goldie er dronninga i huset. Hun er veldig trygg og tålmodig i
@@ -44,26 +48,30 @@
               <li><b>Født:</b> 28/10/2014.</li>
               <li><b>Farge:</b> Rød med hvitt bryst og lugg.</li>
             </ul>
-              Les mer om Goldie <a href="ourDogsParent.html?goldie">her.</a>
+              Les mer om Goldie <a href="ourDogs.html?goldie">her.</a>
         </div>
       </div>
 
-      <div class="box" id="rightBox">
-          <img id="ariana" src="../img/arianaPortrett.jpg" alt="Ariana">
-          <div class="leftBoxText">
-            <h3>Ariana</h3>
+      <div class="box">
+          <div class="dogImgDiv">
+          <img id="dynamic_arianna" class="ourDogsImg" src="../img/ariannaPortrett.jpg" alt="Arianna">
+          </div>
+          <div class="boxText">
+            <h3>Arianna</h3>
             <p>Arianna er en snerten liten frøken med mye fart i. Hun er livlig og
               nysgjerrig, og lærer veldig fort.</p>
               <ul>
                  <li><b>Født:</b> 31/12/2016.</li>
                  <li><b>Farge:</b> Hvit/sobel</li>
               </ul>
-              Les mer om Ariana <a href="ourDogsParent.html?ariana">her.</a>
+              Les mer om Arianna <a href="ourDogs.html?arianna">her.</a>
           </div>
       </div>
 
-      <div class="box" id="leftBoxTwo">
-        <img id="whitney" src="../img/whitneyPortrett.jpg" alt="Whitney">
+      <div class="box">
+        <div class="dogImgDiv">
+        <img id="dynamic_whitney" class="ourDogsImg" src="../img/whitneyPortrett.jpg" alt="Whitney">
+        </div>
         <div class="boxText">
           <h3>Whitney</h3>
           <p>Lille Whitney er familiens nyeste medlem. Hun er rolig, trygg,
@@ -72,11 +80,13 @@
                 <li><b>Født:</b> 8/5/2018.</li>
                 <li><b>Farge:</b>Grå, svart, rød og hvit</li>
             </ul>
-              Les mer om Whitney <a href="ourDogsParent.html?goldie">her.</a>
+              Les mer om Whitney <a href="ourDogs.html?goldie">her.</a>
         </div>
       </div>
     </div>
   </div>
+
+  <script src="../scripts/dynamicDogs.js"></script>
 
     <footer id='paw'></footer>
     <script src="../scripts/pawer.js"></script>

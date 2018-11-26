@@ -199,6 +199,7 @@ FOOTER
 
 #pawLogo {
   height: 8em;
+  width: auto;
   display: inline-block;
   opacity: 0.8;
 }
@@ -709,58 +710,25 @@ END OF GOLDIE
   right: 10%;
 }
 
-#shows {
-  display: inline-block;
-  margin-bottom: 5%;
+#activities_img_parent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: auto auto 5% auto;
 }
 
-#shows p {
-  width: 45%;
-  margin-left: 2%;
+#activities_img_parent > div:nth-child(2) {
+  width: 30%;
 }
 
-#shows img {
-  width: 50%;
-  float: right;
-  overflow: auto;
-  margin-top: 7%;
-  margin-right: 1%;
+.activities_img_container {
+  width: 20%;
+  padding: 1%;
+  background-color: #eeeeee;
 }
 
-#awards {
-  display: inline-block;
-  margin-bottom: 5%;
-}
-
-#awards img {
-  width: 50%;
-  float: left;
-  margin-top: 7%;
-  margin-right: 1%;
-}
-
-#awards p {
-  width: 45%;
-  float: right;
-  margin-right: 2%;
-}
-
-#agility {
-  display: inline-block;
-  margin-bottom: 5%;
-}
-
-#agility img {
-  width: 50%;
-  float: right;
-  margin-top: 7%;
-  margin-right: 1%;
-}
-
-#agility p {
-  width: 45%;
-  float: left;
-  margin-left: 2%;
+.activities_img_container > img {
+  height: 100%;
 }
 
 @media (max-width: 941px) {
@@ -768,33 +736,6 @@ END OF GOLDIE
     width: 90%;
     left: 5%;
     right: 5%;
-  }
-  #shows img {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    width: 100%;
-  }
-  #shows p {
-    width: 100%;
-  }
-  #awards img {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    width: 100%;
-  }
-  #awards p {
-    width: 100%;
-  }
-  #agility img {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    width: 100%;
-  }
-  #agility p {
-    width: 100%;
   }
 }
 

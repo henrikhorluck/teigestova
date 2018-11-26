@@ -65,6 +65,11 @@ a {
 p {
   line-height: 2em;
 }
+
+img {
+  width: 100%;
+}
+
 /*
 ----------------------------------
 END OF BODY
@@ -629,16 +634,6 @@ BICHON HAVANAIS
 ----------------------------------
 */
 
-#bichonCover {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  /*display: block;*/
-  position: relative;
-  top: 0;
-  left: 0;
-}
-
 #textBic h2 {
   text-align: center;
   margin-top: 10%;
@@ -712,12 +707,6 @@ END OF GOLDIE
   width: 80%;
   left: 10%;
   right: 10%;
-}
-
-#topp {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 #shows {

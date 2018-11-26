@@ -616,6 +616,10 @@ OUR DOGS
   margin: 2.5% 2.5% auto 2.5%
 }
 
+.boxText > h3 {
+  margin: 0;
+}
+
 @media (min-width: 940px) {
   .dogs {
     flex-direction: row;
@@ -648,10 +652,6 @@ BICHON HAVANAIS
   width: 60%;
   left: 20%;
   right: 20%;
-}
-
-section {
-  margin-bottom: 10%;
 }
 
 #listeBic li {

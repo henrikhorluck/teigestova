@@ -818,7 +818,7 @@ CONTACT
 
 #contactGroup {
   float: left;
-  max-height: 400px;
+  max-width: 520px;
   margin: 4% 8% 0 8%;
 }
 

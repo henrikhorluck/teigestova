@@ -433,7 +433,7 @@ ABOUT US
 
 .introOmOss {
   position: relative;
-  margin: 0% 10% 10% 10%;
+  margin: 0 10% auto 10%;
 }
 
 .introOmOss h2 {
@@ -508,6 +508,7 @@ ABOUT US
     height: 290px;
     padding: 40px;
     position: absolute;
+    bottom: 2em;
   }
 
   #omoss_dog_prizes {

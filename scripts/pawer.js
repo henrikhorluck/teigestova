@@ -2,7 +2,7 @@
 paw = document.getElementById('paw')
 
 paw.innerHTML = `<ul class="footerInfo">
-    <li><a href="teigestova.html">Home</a></li>
+    <li><a href="teigestova.html">Hjem</a></li>
     <li><a href="about.html">Om oss</a></li>
     <li><a href="ourDogs.html">Våre hunder</a></li>
     <li><a href="bichonHavanais.html">Bichon Havanais</a></li>

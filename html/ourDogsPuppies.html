@@ -1,55 +1,85 @@
 <!DOCTYPE html>
 <html lang="nb-NO" dir="ltr">
-
-<head>
+  <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Our puppies</title>
-    <meta name="description" content="Informasjon om valper som er til salgs">
-    <meta name="keywords" content="valp, salg, bichon havanais, oppdretter, kennel, hund, rase">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="../css/style.css"/>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
-    <link rel="icon" type="image/png" href="../img/faviconpaw.png" sizes="32x32"/>
-</head>
+    <meta name="description" content="Informasjon om valper som er til salgs" />
+    <meta
+      name="keywords"
+      content="valp, salg, bichon havanais, oppdretter, kennel, hund, rase"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="../css/style.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Playfair+Display"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="../img/faviconpaw.png"
+      sizes="32x32"
+    />
+  </head>
 
-<body>
-    <nav id='navigation_bar'></nav>
+  <body>
+    <nav id="navigation_bar"></nav>
     <script src="../scripts/nav-part.js"></script>
-    
-    <div id="content">
-    <h1>Valper</h1>
-    <p>
-        Planlagt parring mellom vår Cubana Stars Amazing Arianna og
-        Skystar’s Orpheus neste løpetid. <br>
-        Valper forventes februar 2019.
-    </p>
 
-    <!-- PS! Det ligger kun bilder av en hund som tilhører Teigestova fordi planen er egentlig at bildegalleri kun skal eksistere om det er valper tilgjengelig for salg, men vi ville gi eksempel. -->
-    <p>
-        Bilder av de valpene vi har til salg nå ligger under:
-    </p>
-    </div> 
+    <div id="content">
+      <h1>Valper</h1>
+      <p>
+        Planlagt parring mellom vår Cubana Stars Amazing Arianna og Skystar’s
+        Orpheus neste løpetid. <br />
+        Valper forventes februar 2019.
+      </p>
+
+      <!--
+        PS! Det ligger kun bilder av en hund som tilhører Teigestova fordi planen er egentlig at bildegalleri kun skal eksistere om det er valper tilgjengelig for salg, men vi ville gi eksempel.
+      -->
+      <p>Bilder av de valpene vi har til salg nå ligger under:</p>
+    </div>
 
     <div>
-    <img id="whitneyLightbox" src="../img/whitney.jpg" alt="Bildet av valpen Whitney" onclick="open_image(); current_image(1);">
+      <img
+        id="whitneyLightbox"
+        src="../img/whitney.jpg"
+        alt="Bildet av valpen Whitney"
+        onclick="open_image(); current_image(1);"
+      />
     </div>
 
-    <!-- This section is used together with style13.css and imageView.js to create the image viewer when clicking on images. -->
-        <!--  This div element contains the lightbox container together with all the buttons and a new full size image of every picture
-        we want to appear in the lightbox.  -->
+    <!--
+      This section is used together with style13.css and imageView.js to create the image viewer when clicking on images.
+    -->
+    <!--
+      This div element contains the lightbox container together with all the buttons and a new full size image of every picture
+      we want to appear in the lightbox.
+    -->
     <div id="imageView" class="imageViewer">
-            <!-- This adds an 'X' ('&times;') to the imageViewer as well as making it run the close_image function when clicked -->
-            <span class="closeViewer" onclick="close_image()"> &times; </span>
-            <!-- This either adds or removes 1 from the variable 'n' used in change_image(), which in turn decides which picture is shown in fullscreen -->
-             <a class="nextImage" onclick="change_image(1)"> &#10095; </a>
-             <a class="previousImage" onclick="change_image(-1)"> &#10094; </a>
+      <!--
+        This adds an 'X' ('&times;') to the imageViewer as well as making it run the close_image function when clicked
+      -->
+      <span class="closeViewer" onclick="close_image()"> &times; </span>
+      <!--
+        This either adds or removes 1 from the variable 'n' used in change_image(), which in turn decides which picture is shown in fullscreen
+      -->
+      <a class="nextImage" onclick="change_image(1)"> &#10095; </a>
+      <a class="previousImage" onclick="change_image(-1)"> &#10094; </a>
     </div>
 
-    <footer id='paw'></footer>
+    <footer id="paw"></footer>
     <script src="../scripts/pawer.js"></script>
     <script src="../scripts/imageView.js"></script>
-</body>
-
+  </body>
 </html>

@@ -24,12 +24,6 @@ body {
   justify-content: space-between;
 }
 
-.headerContainer {
-  position: relative;
-  top: 0;
-  left: 0;
-}
-
 h1 {
   font-family: "Playfair Display", serif;
   font-weight: normal;

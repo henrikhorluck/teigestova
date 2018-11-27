@@ -191,6 +191,7 @@ FOOTER
   padding-right: 8%;
   padding-left: 8%;
   display: inline-block;
+  line-height: 1.5em;
 }
 
 footer > img {

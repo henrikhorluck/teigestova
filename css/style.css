@@ -193,7 +193,7 @@ FOOTER
   display: inline-block;
 }
 
-#pawLogo {
+footer > img {
   height: 8em;
   width: auto;
   display: inline-block;

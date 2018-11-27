@@ -24,17 +24,6 @@ body {
   justify-content: space-between;
 }
 
-.headerContainer {
-  position: relative;
-  top: 0;
-  left: 0;
-}
-
-header {
-  margin-bottom: 4.2em;
-  text-align: center;
-}
-
 h1 {
   font-family: "Playfair Display", serif;
   font-weight: normal;
@@ -60,11 +49,44 @@ a {
   color: #000000;
   font-weight: bold;
   text-decoration: none;
+  position: relative;
+}
+
+a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  -moz-transform: scaleX(0);
+  -o-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  -moz-transform: scaleX(1);
+  -o-transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 p {
   line-height: 2em;
 }
+
+img {
+  width: 100%;
+}
+
 /*
 ----------------------------------
 END OF BODY
@@ -141,6 +163,10 @@ nav li ul li {
   nav ul > li:hover ul li {
     height: 72px;
   }
+
+  li.under_hunder {
+    width: 239.06px;
+  }
 }
 /* Creating a nav for smaller screens than 768px*/
 @media (max-width: 940px) {
@@ -175,6 +201,13 @@ FOOTER
 */
 
 #paw {
+  background: linear-gradient(
+      rgba(83, 140, 109, 0.33),
+      rgba(83, 140, 109, 0.66),
+      #538c6d
+    ),
+    url(../img/footerBack.jpg);
+  background-size: cover;
   background-color: #538c6d;
   color: #ffffff;
   overflow: auto;
@@ -190,19 +223,25 @@ FOOTER
   padding-right: 8%;
   padding-left: 8%;
   display: inline-block;
+  line-height: 1.5em;
 }
 
-#pawLogo {
+footer > img {
   height: 8em;
+  width: auto;
   display: inline-block;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
-#paw a {
+footer a {
   color: #ffffff;
 }
 
-#paw li {
+footer a:before {
+  background-color: #ffffff;
+}
+
+footer li {
   list-style-type: none;
 }
 
@@ -605,7 +644,11 @@ OUR DOGS
 
 .dogImgDiv {
   width: 95%;
-  margin: 2.5% 2.5% auto 2.5%
+  margin: 2.5% 2.5% auto 2.5%;
+}
+
+.boxText > h3 {
+  margin: 0;
 }
 
 @media (min-width: 940px) {
@@ -629,16 +672,6 @@ BICHON HAVANAIS
 ----------------------------------
 */
 
-#bichonCover {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  /*display: block;*/
-  position: relative;
-  top: 0;
-  left: 0;
-}
-
 #textBic h2 {
   text-align: center;
   margin-top: 10%;
@@ -652,10 +685,6 @@ BICHON HAVANAIS
   right: 20%;
 }
 
-section {
-  margin-bottom: 10%;
-}
-
 #listeBic li {
   line-height: 1.5em;
 }
@@ -664,6 +693,14 @@ section {
   text-align: center;
   line-height: 2em;
   margin-bottom: 15%;
+}
+
+@media (max-width: 941px) {
+  #tekstBic {
+    width: 80%;
+    left: 10%;
+    right: 10%;
+  }
 }
 
 /*
@@ -714,64 +751,32 @@ END OF GOLDIE
   right: 10%;
 }
 
-#topp {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+#activities_img_parent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: auto auto 5% auto;
 }
 
-#shows {
-  display: inline-block;
-  margin-bottom: 5%;
+#activities_img_parent > div:nth-child(2) {
+  width: 30%;
 }
 
-#shows p {
-  width: 45%;
-  margin-left: 2%;
+#activities_img_parent > div:nth-child(2) > img {
+  height: 85%;
 }
 
-#shows img {
-  width: 50%;
-  float: right;
-  overflow: auto;
-  margin-top: 7%;
-  margin-right: 1%;
+.activities_img_container {
+  width: 20vw;
+  height: 20vw;
+  background-color: #eeeeee;
 }
 
-#awards {
-  display: inline-block;
-  margin-bottom: 5%;
-}
-
-#awards img {
-  width: 50%;
-  float: left;
-  margin-top: 7%;
-  margin-right: 1%;
-}
-
-#awards p {
-  width: 45%;
-  float: right;
-  margin-right: 2%;
-}
-
-#agility {
-  display: inline-block;
-  margin-bottom: 5%;
-}
-
-#agility img {
-  width: 50%;
-  float: right;
-  margin-top: 7%;
-  margin-right: 1%;
-}
-
-#agility p {
-  width: 45%;
-  float: left;
-  margin-left: 2%;
+.activities_img_container > img {
+  height: 90%;
+  width: 90%;
+  padding: 5%;
+  object-fit: cover;
 }
 
 @media (max-width: 941px) {
@@ -780,42 +785,22 @@ END OF GOLDIE
     left: 5%;
     right: 5%;
   }
-  #shows img {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    width: 100%;
+
+  #activities_img_parent {
+    flex-direction: column;
   }
-  #shows p {
-    width: 100%;
+
+  .activities_img_container {
+    width: 90% !important;
+    height: 90vw;
+    margin: 50px 5% auto 5%;
   }
-  #awards img {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    width: 100%;
-  }
-  #awards p {
-    width: 100%;
-  }
-  #agility img {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    width: 100%;
-  }
-  #agility p {
-    width: 100%;
+  
+  #activities_img_parent > div:nth-child(2) > img {
+    height: 90%;
   }
 }
 
-@media (max-width: 941px) {
-  #tekstBic {
-    width: 80%;
-    left: 10%;
-    right: 10%;
-  }
-}
 /*
 ----------------------------------
 CONTACT
@@ -829,7 +814,7 @@ CONTACT
 
 #contactGroup {
   float: left;
-  max-height: 400px;
+  max-width: 520px;
   margin: 4% 8% 0 8%;
 }
 

@@ -15,12 +15,12 @@ const goldie_text = `<h2>Goldie</h2>
     <p>Goldie er dronninga i huset. Hun er trygg på seg selv og har et veldig
     tydelig kroppspråk, egenskaper vi setter stor pris på at hun bruker på de
     andre hundene. Når hun er med på tur i bilen eller vi er på utstilling,
-    er det ro i flokken.<p>
-
+    er det ro i flokken.</p>
+    
     <p>Goldie elsker late dager og vil helst kose seg i sofaen med far i huset.
     Samtidig er hun rask inn i bilen når hun ser at utstillingsutstyret blir
     pakket sammen. Goldie liker å vise seg i ringen, hun fører seg som ei
-    dronning og har utmerket kontakt med den som går med henne.<p>`;
+    dronning og har utmerket kontakt med den som går med henne.</p>`;
 
 const arianna_text = `<h2>Arianna</h2>
 <ul>
@@ -43,8 +43,7 @@ siden hun selv søker kontakt med jevne mellomrom og innkalling er noe vi
 nesten ikke har trengt å jobbe med på denne snuppa.</p>
 
 <p>Arianna har en kropp som er skapt for fart og er et vidunder på
-agility-banen.</p>
-</p>`;
+agility-banen.</p>`;
 
 const whitney_text = `<h2>Whitney</h2>
 <ul>

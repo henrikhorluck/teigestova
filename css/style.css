@@ -658,6 +658,14 @@ BICHON HAVANAIS
   margin-bottom: 15%;
 }
 
+@media (max-width: 941px) {
+  #tekstBic {
+    width: 80%;
+    left: 10%;
+    right: 10%;
+  }
+}
+
 /*
 ----------------------------------
 END OF BICHON HAVANAIS
@@ -717,14 +725,21 @@ END OF GOLDIE
   width: 30%;
 }
 
+#activities_img_parent > div:nth-child(2) > img {
+  height: 85%;
+}
+
 .activities_img_container {
-  width: 20%;
-  padding: 1%;
+  width: 20vw;
+  height: 20vw;
   background-color: #eeeeee;
 }
 
 .activities_img_container > img {
-  height: 100%;
+  height: 90%;
+  width: 90%;
+  padding: 5%;
+  object-fit: cover;
 }
 
 @media (max-width: 941px) {
@@ -733,15 +748,22 @@ END OF GOLDIE
     left: 5%;
     right: 5%;
   }
-}
 
-@media (max-width: 941px) {
-  #tekstBic {
-    width: 80%;
-    left: 10%;
-    right: 10%;
+  #activities_img_parent {
+    flex-direction: column;
+  }
+
+  .activities_img_container {
+    width: 90% !important;
+    height: 90vw;
+    margin: 50px 5% auto 5%;
+  }
+  
+  #activities_img_parent > div:nth-child(2) > img {
+    height: 90%;
   }
 }
+
 /*
 ----------------------------------
 CONTACT

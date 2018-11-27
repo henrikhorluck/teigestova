@@ -170,8 +170,8 @@ FOOTER
 
 #paw {
   background: linear-gradient(
-      rgba(83, 140, 109, 0.25),
-      rgba(83, 140, 109, 0.75),
+      rgba(83, 140, 109, 0.33),
+      rgba(83, 140, 109, 0.66),
       #538c6d
     ),
     url(../img/footerBack.jpg);

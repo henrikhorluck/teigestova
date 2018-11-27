@@ -30,11 +30,6 @@ body {
   left: 0;
 }
 
-header {
-  margin-bottom: 4.2em;
-  text-align: center;
-}
-
 h1 {
   font-family: "Playfair Display", serif;
   font-weight: normal;
@@ -715,7 +710,7 @@ END OF GOLDIE
 #activities_img_parent {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
   margin: auto auto 5% auto;
 }
 

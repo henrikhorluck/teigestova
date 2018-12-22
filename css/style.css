@@ -3,6 +3,10 @@
 BODY
 ----------------------------------
 */
+html {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
 
 body {
   background-color: #e0dada;
@@ -16,6 +20,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -209,8 +215,6 @@ FOOTER
   background-size: cover;
   background-color: #538c6d;
   color: #ffffff;
-  overflow: auto;
-  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;

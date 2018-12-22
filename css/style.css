@@ -4,12 +4,6 @@ BODY
 ----------------------------------
 */
 
-html,
-body {
-  position: relative;
-  overflow-x: hidden;
-}
-
 body {
   background-color: #e0dada;
   font-family: "Roboto", sans-serif;
@@ -103,10 +97,15 @@ nav {
   text-align: center;
   z-index: 3;
   background-color: #ccc7c7;
-  position: relative;
   font-size: 20pt;
   color: #484646;
   height: 73px;
+  position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -ms-sticky;
+  position: -o-sticky;
+  position: sticky;
+  top: 0;
 }
 
 nav ul {
@@ -164,7 +163,7 @@ nav li ul li {
     height: 72px;
   }
 
-  li.under_hunder {
+  nav li ul li {
     width: 239.06px;
   }
 }
@@ -946,13 +945,6 @@ z-index priority) and disables scrolling.  */
     height: 0px;
     border-style: none;
   }
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 10;
 }
 
 /*

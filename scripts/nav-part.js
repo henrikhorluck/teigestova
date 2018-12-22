@@ -1,6 +1,6 @@
 //Responsive nav-bar
 
-var navigation_bar = document.getElementById('navigation_bar')
+var navigation_bar = document.getElementsByTagName('nav')[0]
 
 navigation_bar.innerHTML = `<div id="navbar">
         <div>≡</div>
@@ -16,7 +16,6 @@ navigation_bar.innerHTML = `<div id="navbar">
                     <li class="under_hunder"><a href="ourDogsPuppies.html">Valper</a></li>
                     <li class="under_hunder"><a href="ourDogsActivities.html">Aktiviteter</a></li>
               </ul>
-
         </li>
         <li><a href="bichonHavanais.html">Bichon Havanais</a></li>
         <li><a href="contact.html">Kontakt</a></li>

@@ -135,7 +135,7 @@ nav ul li a {
 }
 
 nav a:hover {
-  font-weight: bold;
+  text-shadow: 1px 0px 0px black;
 }
 
 nav ul ul {

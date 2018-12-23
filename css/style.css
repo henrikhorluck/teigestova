@@ -3,7 +3,7 @@
 BODY
 ----------------------------------
 */
-html {
+:root {
   overflow-y: scroll;
   overflow-x: hidden;
 }
@@ -20,8 +20,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  overflow-y: scroll;
-  overflow-x: hidden;
 }
 
 h1 {
@@ -107,9 +105,6 @@ nav {
   color: #484646;
   height: 73px;
   position: -webkit-sticky;
-  position: -moz-sticky;
-  position: -ms-sticky;
-  position: -o-sticky;
   position: sticky;
   top: 0;
 }
@@ -164,7 +159,7 @@ nav li ul li {
   -o-transition: height 200ms ease-in;
   transition: height 200ms ease-in;
 }
-@media (min-width: 941px) {
+@media (min-width: 1001px) {
   nav ul > li:hover ul li {
     height: 72px !important;
   }
@@ -174,7 +169,7 @@ nav li ul li {
   }
 }
 /* Creating a nav for smaller screens than 768px*/
-@media (max-width: 940px) {
+@media (max-width: 1000px) {
   nav div {
     display: block;
   }
@@ -542,7 +537,7 @@ ABOUT US
   background-color: #79947e;
 }
 
-@media (min-width: 941px) {
+@media (min-width: 1001px) {
   #sitatOmoss {
     margin-top: 40px;
     margin-left: 20px;
@@ -565,8 +560,8 @@ ABOUT US
   }
 }
 
-/* CSS for smaller screens than 941px*/
-@media (max-width: 941px) {
+/* CSS for smaller screens than 1001px*/
+@media (max-width: 1001px) {
   #omoss_dog_face {
     display: none;
   }
@@ -699,7 +694,7 @@ BICHON HAVANAIS
   margin-bottom: 15%;
 }
 
-@media (max-width: 941px) {
+@media (max-width: 1001px) {
   #tekstBic {
     width: 80%;
     left: 10%;
@@ -783,7 +778,7 @@ END OF GOLDIE
   object-fit: cover;
 }
 
-@media (max-width: 941px) {
+@media (max-width: 1001px) {
   #tekstAct {
     width: 90%;
     left: 5%;

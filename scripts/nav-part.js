@@ -1,6 +1,7 @@
 //Responsive nav-bar
 
-var navigation_bar = document.getElementsByTagName('nav')[0]
+const navigation_bar = document.getElementsByTagName('nav')[0]
+const mobileBreakpoint = 1000;
 
 navigation_bar.innerHTML = `<div id="navbar">
         <div>≡</div>
@@ -54,7 +55,7 @@ function openOurDogs() {
 window.addEventListener('resize', update_navbar)
 function update_navbar(){
   var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-  if (w > 940){
+  if (w > mobileBreakpoint){
     // So you can't open the navbar on large screen
     document.getElementById('navbar').removeEventListener('click', open_dropdown)
     // so you can't click to open the sub-menu whe the screen is wide
@@ -64,7 +65,7 @@ function update_navbar(){
     ourDogs_link.setAttribute('href', 'ourDogs.html')
     // opens the mobile menu
     dropdown.style.display = "block";
-  } else if (w <= 940){
+  } else if (w <= mobileBreakpoint){
     // opening navbar
     document.getElementById('navbar').addEventListener('click', open_dropdown)
     // can open the sub-menu, and the click on the same button again, also doesn't reload page

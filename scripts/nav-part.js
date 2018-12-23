@@ -73,9 +73,9 @@ function update_navbar(){
     dropdown.style.display = "none"
   }
   // resets the closed sub-menu
-  if (under_hunder[0].style.height == '60px') {	
+  if (under_hunder[0].style.height == '72px') {	
     for (let i = 0; i < under_hunder.length; i++) {
-      under_hunder[i].style.height = "0";  
+      under_hunder[i].style.height = '0';  
     }
   }
   //resets the linking, so you can open the sub-menu again

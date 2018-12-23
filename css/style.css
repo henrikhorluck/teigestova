@@ -166,7 +166,7 @@ nav li ul li {
 }
 @media (min-width: 941px) {
   nav ul > li:hover ul li {
-    height: 72px;
+    height: 72px !important;
   }
 
   nav li ul li {

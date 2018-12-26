@@ -145,7 +145,13 @@ nav ul ul li {
 nav div {
   padding: 0.3em;
   cursor: pointer;
+  justify-content: center;
+  align-items: center;
   display: none;
+}
+
+nav img {
+  height: 34px;
 }
 
 nav li ul {
@@ -171,7 +177,7 @@ nav li ul li {
 /* Creating a nav for smaller screens than 768px*/
 @media (max-width: 1000px) {
   nav div {
-    display: block;
+    display: flex;
   }
 
   #dropdown {

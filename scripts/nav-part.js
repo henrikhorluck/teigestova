@@ -4,7 +4,7 @@ const navigation_bar = document.getElementsByTagName('nav')[0]
 const mobileBreakpoint = 1000;
 
 navigation_bar.innerHTML = `<div id="navbar">
-        <div>≡</div>
+        <div><img src="../img/menu.svg"/></div>
   </div>
     <ul id="dropdown">
         <li><a href="teigestova.html">Hjem</a></li>

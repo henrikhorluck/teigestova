@@ -3,10 +3,8 @@
 BODY
 ----------------------------------
 */
-
-html,
-body {
-  position: relative;
+:root {
+  overflow-y: scroll;
   overflow-x: hidden;
 }
 
@@ -103,10 +101,12 @@ nav {
   text-align: center;
   z-index: 3;
   background-color: #ccc7c7;
-  position: relative;
   font-size: 20pt;
   color: #484646;
   height: 73px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 nav ul {
@@ -130,7 +130,7 @@ nav ul li a {
 }
 
 nav a:hover {
-  font-weight: bold;
+  text-shadow: 1px 0px 0px black;
 }
 
 nav ul ul {
@@ -145,7 +145,13 @@ nav ul ul li {
 nav div {
   padding: 0.3em;
   cursor: pointer;
+  justify-content: center;
+  align-items: center;
   display: none;
+}
+
+nav img {
+  height: 34px;
 }
 
 nav li ul {
@@ -159,19 +165,19 @@ nav li ul li {
   -o-transition: height 200ms ease-in;
   transition: height 200ms ease-in;
 }
-@media (min-width: 941px) {
+@media (min-width: 1001px) {
   nav ul > li:hover ul li {
-    height: 72px;
+    height: 72px !important;
   }
 
-  li.under_hunder {
+  nav li ul li {
     width: 239.06px;
   }
 }
 /* Creating a nav for smaller screens than 768px*/
-@media (max-width: 940px) {
+@media (max-width: 1000px) {
   nav div {
-    display: block;
+    display: flex;
   }
 
   #dropdown {
@@ -210,8 +216,6 @@ FOOTER
   background-size: cover;
   background-color: #538c6d;
   color: #ffffff;
-  overflow: auto;
-  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -539,7 +543,7 @@ ABOUT US
   background-color: #79947e;
 }
 
-@media (min-width: 941px) {
+@media (min-width: 1001px) {
   #sitatOmoss {
     margin-top: 40px;
     margin-left: 20px;
@@ -562,8 +566,8 @@ ABOUT US
   }
 }
 
-/* CSS for smaller screens than 941px*/
-@media (max-width: 941px) {
+/* CSS for smaller screens than 1001px*/
+@media (max-width: 1001px) {
   #omoss_dog_face {
     display: none;
   }
@@ -696,7 +700,7 @@ BICHON HAVANAIS
   margin-bottom: 15%;
 }
 
-@media (max-width: 941px) {
+@media (max-width: 1001px) {
   #tekstBic {
     width: 80%;
     left: 10%;
@@ -780,7 +784,7 @@ END OF GOLDIE
   object-fit: cover;
 }
 
-@media (max-width: 941px) {
+@media (max-width: 1001px) {
   #tekstAct {
     width: 90%;
     left: 5%;
@@ -946,13 +950,6 @@ z-index priority) and disables scrolling.  */
     height: 0px;
     border-style: none;
   }
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 10;
 }
 
 /*

@@ -1,9 +1,10 @@
 //Responsive nav-bar
 
-var navigation_bar = document.getElementById('navigation_bar')
+const navigation_bar = document.getElementsByTagName('nav')[0]
+const mobileBreakpoint = 1000;
 
 navigation_bar.innerHTML = `<div id="navbar">
-        <div>≡</div>
+        <div><img src="../img/menu.svg"/></div>
   </div>
     <ul id="dropdown">
         <li><a href="teigestova.html">Hjem</a></li>
@@ -16,7 +17,6 @@ navigation_bar.innerHTML = `<div id="navbar">
                     <li class="under_hunder"><a href="ourDogsPuppies.html">Valper</a></li>
                     <li class="under_hunder"><a href="ourDogsActivities.html">Aktiviteter</a></li>
               </ul>
-
         </li>
         <li><a href="bichonHavanais.html">Bichon Havanais</a></li>
         <li><a href="contact.html">Kontakt</a></li>
@@ -55,7 +55,7 @@ function openOurDogs() {
 window.addEventListener('resize', update_navbar)
 function update_navbar(){
   var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-  if (w > 940){
+  if (w > mobileBreakpoint){
     // So you can't open the navbar on large screen
     document.getElementById('navbar').removeEventListener('click', open_dropdown)
     // so you can't click to open the sub-menu whe the screen is wide
@@ -65,7 +65,7 @@ function update_navbar(){
     ourDogs_link.setAttribute('href', 'ourDogs.html')
     // opens the mobile menu
     dropdown.style.display = "block";
-  } else if (w <= 940){
+  } else if (w <= mobileBreakpoint){
     // opening navbar
     document.getElementById('navbar').addEventListener('click', open_dropdown)
     // can open the sub-menu, and the click on the same button again, also doesn't reload page
@@ -74,9 +74,9 @@ function update_navbar(){
     dropdown.style.display = "none"
   }
   // resets the closed sub-menu
-  if (under_hunder[0].style.height == '60px') {	
+  if (under_hunder[0].style.height == '72px') {	
     for (let i = 0; i < under_hunder.length; i++) {
-      under_hunder[i].style.height = "0";  
+      under_hunder[i].style.height = '0';  
     }
   }
   //resets the linking, so you can open the sub-menu again
